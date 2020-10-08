@@ -64,33 +64,7 @@ This will install the directory `Knora` with subdirectories in the chosen direct
 <br>
 
 ## Chose and install a triplestore
-There are a number of triplestore implementations available, including free software as well as proprietary options. Knora is aimed to work with any standards-compliant triplestore. However, it is primarily tested with [Ontotext GraphDB [http://ontotext.com/products/graphdb/]](http://ontotext.com/products/graphdb/), a high-performance, proprietary triplestore. We recommend GraphDB Standard Edition, but GraphDB Free - which is proprietary but available free of charge - also works. Both versions need to be licensed separately from [Ontotext [http://ontotext.com]](http://ontotext.com). GraphDB-Free can be simply licensed by filling in the respective online registration from.
-
-Depending on which GraphDB version has been licensed, some environment variables may have to be set:
-#### GraphDB-Free:
-Type
-````
-export KNORA_GDB_TYPE=graphdb-free
-````
-to tell Knora that you use GraphDB-Free. If you decide to use another folder than the default folder `./triplestores/graphdb/`, it is necessary to tell Knora the path to your folder:
-````
-export KNORA_GDB_HOME=/path/to/your/folder 
-````
-Copy the GraphDB license file into the folder `./triplestores/graphdb/` or into a folder of your choice and name it `graphdb.license`.
-
-#### GraphDB-SE:
-Since GraphDB-SE is our default triplestore version you only need to modify the settings if you aren't using the following default value paths:
-
-* `./triplestores/graphdb/` for KNORA_GDB_HOME
-* `./triplestores/graphdb/graphdb.license` for the license file.
-
-If you chose other locations, you need to tell Knora the path to your folder and to the license file: 
-````
-export KNORA_GDB_TYPE=graphdb-se
-export KNORA_GDB_LICENSE=/path/to/your/licensefile
-export KNORA_GDB_HOME=/path/to/your/folder
-````
-Copy the GraphDB license file into the folder `./triplestores/graphdb/` or into a folder of your choice and name it `graphdb.license`. Then restart your terminal.
+There are a number of triplestore implementations available, including free software as well as proprietary options. Knora is aimed to work with any standards-compliant triplestore. 
 
 <br>
 
