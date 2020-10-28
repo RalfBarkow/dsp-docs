@@ -1,0 +1,1578 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/dasch-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>Introduction - DaSCH Service Platform Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../assets/style/theme.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#dsp-ui-library" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="DaSCH Service Platform Documentation" class="md-header-nav__button md-logo" aria-label="DaSCH Service Platform Documentation">
+      
+  <img src="../../../assets/images/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            DaSCH Service Platform Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Introduction
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../user-guide/" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../community/faq/" class="md-tabs__link">
+          Community
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="DaSCH Service Platform Documentation" class="md-nav__button md-logo" aria-label="DaSCH Service Platform Documentation">
+      
+  <img src="../../../assets/images/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    DaSCH Service Platform Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/project/" title="Project Management" class="md-nav__link">
+      Project Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/data/" title="Data Management" class="md-nav__link">
+      Data Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/user/" title="User Management" class="md-nav__link">
+      User Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/system/" title="System Management" class="md-nav__link">
+      System Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Developers
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developers" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/getting-started/" title="Knora Getting Started" class="md-nav__link">
+      Knora Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      API Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API Reference" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        API Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/api-reference/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/api-reference/queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" checked>
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1">
+    
+    <label class="md-nav__link" for="nav-2-4-1">
+      Knora
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Knora" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        Knora
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/documentation/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/documentation/rdf/" title="RDF" class="md-nav__link">
+      RDF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/documentation/knora-base/" title="Knora-base ontology" class="md-nav__link">
+      Knora-base ontology
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/documentation/knora-admin/" title="Knora-admin ontology" class="md-nav__link">
+      Knora-admin ontology
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora-api-js-lib/documentation/" title="Knora API JS lib" class="md-nav__link">
+      Knora API JS lib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3" type="checkbox" id="nav-2-4-3" checked>
+    
+    <label class="md-nav__link" for="nav-2-4-3">
+      DSP-UI modules
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DSP-UI modules" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        DSP-UI modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Introduction
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Introduction" class="md-nav__link md-nav__link--active">
+      Introduction
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface-library-for-dsp-api" class="md-nav__link">
+    User Interface library for DSP-API
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#library-modules" class="md-nav__link">
+    Library modules
+  </a>
+  
+    <nav class="md-nav" aria-label="Library modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dspactionmodule" class="md-nav__link">
+    DspActionModule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dspcoremodule" class="md-nav__link">
+    DspCoreModule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dspsearchmodule" class="md-nav__link">
+    DspSearchModule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dspviewermodule" class="md-nav__link">
+    DspViewerModule
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribute-to-develop-dsp-ui-modules" class="md-nav__link">
+    Contribute to develop DSP-UI modules
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-2" type="checkbox" id="nav-2-4-3-2">
+    
+    <label class="md-nav__link" for="nav-2-4-3-2">
+      Action module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Action module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Action module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/index-action/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/admin-image/" title="AdminImage" class="md-nav__link">
+      AdminImage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/existing-name/" title="ExistingName" class="md-nav__link">
+      ExistingName
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/key/" title="Key" class="md-nav__link">
+      Key
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/message/" title="Message" class="md-nav__link">
+      Message
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/progress-indicator/" title="Progress indicator" class="md-nav__link">
+      Progress indicator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/sort-button/" title="SortButton" class="md-nav__link">
+      SortButton
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/stringify-string-literal/" title="StringifyStringLiteral" class="md-nav__link">
+      StringifyStringLiteral
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="action/truncate/" title="Truncate" class="md-nav__link">
+      Truncate
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-3" type="checkbox" id="nav-2-4-3-3">
+    
+    <label class="md-nav__link" for="nav-2-4-3-3">
+      Core module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Core module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Core module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="core/index-core/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-4" type="checkbox" id="nav-2-4-3-4">
+    
+    <label class="md-nav__link" for="nav-2-4-3-4">
+      Search module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Search module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-4">
+        <span class="md-nav__icon md-icon"></span>
+        Search module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="search/index-search/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="search/search-panel/" title="Search-panel" class="md-nav__link">
+      Search-panel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="search/fulltext-search/" title="Fulltext search" class="md-nav__link">
+      Fulltext search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="search/extended-search/" title="Extended search" class="md-nav__link">
+      Extended search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="search/expert-search/" title="Expert search" class="md-nav__link">
+      Expert search
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-5" type="checkbox" id="nav-2-4-3-5">
+    
+    <label class="md-nav__link" for="nav-2-4-3-5">
+      Viewer module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Viewer module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-5">
+        <span class="md-nav__icon md-icon"></span>
+        Viewer module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="viewer/index-viewer/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="viewer/search-results/" title="Search-results" class="md-nav__link">
+      Search-results
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora-web-app/documentation/" title="Knora web app" class="md-nav__link">
+      Knora web app
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sipi/documentation/" title="Sipi" class="md-nav__link">
+      Sipi
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Contribution
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contribution" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp/contribution/" title="How to contribute" class="md-nav__link">
+      How to contribute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/contribution/" title="Knora" class="md-nav__link">
+      Knora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora-api-js-lib/contribution/" title="Knora API JS lib" class="md-nav__link">
+      Knora API JS lib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contribution/" title="DSP-UI modules" class="md-nav__link">
+      DSP-UI modules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora-web-app/contribution/" title="Knora web app" class="md-nav__link">
+      Knora web app
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sipi/contribution/" title="Sipi" class="md-nav__link">
+      Sipi
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Community
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Community" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Community
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../community/faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../community/product-updates/" title="Product Updates" class="md-nav__link">
+      Product Updates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../community/about-us/" title="About us" class="md-nav__link">
+      About us
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface-library-for-dsp-api" class="md-nav__link">
+    User Interface library for DSP-API
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#library-modules" class="md-nav__link">
+    Library modules
+  </a>
+  
+    <nav class="md-nav" aria-label="Library modules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dspactionmodule" class="md-nav__link">
+    DspActionModule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dspcoremodule" class="md-nav__link">
+    DspCoreModule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dspsearchmodule" class="md-nav__link">
+    DspSearchModule
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dspviewermodule" class="md-nav__link">
+    DspViewerModule
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    Installation
+  </a>
+  
+    <nav class="md-nav" aria-label="Installation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribute-to-develop-dsp-ui-modules" class="md-nav__link">
+    Contribute to develop DSP-UI modules
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="dsp-ui-library">DSP-UI library</h1>
+<h2 id="user-interface-library-for-dsp-api">User Interface library for DSP-API</h2>
+<p>DSP-UI library is published on <a href="https://www.npmjs.com/package/@dasch-swiss/dsp-ui">npmJS</a>. DSP-UI contains 4 modules: core, viewer, search and action.</p>
+<p>The modules help create a GUI to allow the user to use <a href="https://docs.dasch.swiss/developers/knora/api-reference/">DSP-API</a> in a quick and simple way from within a web application. The modules are written in Typescript for use with <a href="https://angular.io">Angular</a> (version 9). We decided to style components and directives with <a href="https://material.angular.io">Angular Material design</a>.</p>
+<p>DSP-UI-LIB implements <a href="https://www.npmjs.com/package/@knora/api">DSP-JS-LIB</a> to connect with <a href="https://docs.dasch.swiss/developers/knora/api-reference/">DSP-API</a>. DSP-API is a software framework for storing, sharing, and working with primary sources and data in the humanities.</p>
+<p><strong>DSP-UI requires <a href="https://github.com/dasch-swiss/knora-api/releases/tag/v12.0.0">DSP-API version ^12.0.0</a></strong></p>
+<h2 id="library-modules">Library modules</h2>
+<h3 id="dspactionmodule"><a href="/developers/dsp-ui/documentation/action/index-action">DspActionModule</a></h3>
+<p><em>Special pipes and buttons</em></p>
+<blockquote>
+<p>DspActionModule contains special pipes to sort lists or to get the index key in arrays, but also directives and components for images, sort buttons and s.o.</p>
+</blockquote>
+<h3 id="dspcoremodule"><a href="/developers/dsp-ui/documentation/core/index-core">DspCoreModule</a></h3>
+<p><em>Services for API requests</em></p>
+<blockquote>
+<p>DspCoreModule is a configuration handler for <a href="https://www.npmjs.com/package/@knora/api"><code>@knora/api</code></a> which offers all the services to make <a href="https://docs.dasch.swiss/developers/knora/api-reference/queries/">DSP-API requests</a>.</p>
+</blockquote>
+<h3 id="dspsearchmodule"><a href="/developers/dsp-ui/documentation/search/index-search">DspSearchModule</a></h3>
+<p><em>Full search panel</em></p>
+<blockquote>
+<p>DspSearchModule allows to make full text or extended searches in DSP-API. Filter by resource class and its properties related to an ontology.</p>
+</blockquote>
+<h3 id="dspviewermodule"><a href="/developers/dsp-ui/documentation/viewer/index-viewer">DspViewerModule</a></h3>
+<p><em>Resources, Properties, Lists, Value components</em></p>
+<blockquote>
+<p>DspViewerModule contains object components to show a resource class representation, the property gui-elements and various view frameworks.</p>
+</blockquote>
+<hr />
+<h2 id="installation">Installation</h2>
+<pre><code class="language-bash">npm install @dasch-swiss/dsp-ui
+</code></pre>
+<h3 id="dependencies">Dependencies</h3>
+<p>The module has the following package dependencies, which you also have to install.</p>
+<!-- TODO: the following package will be renamed to @dasch-swiss/dsp-js and the list of dependencies incl. version will be added to an external matrix file -->
+<ul>
+<li><a href="https://www.npmjs.com/package/@knora/api">@knora/api</a></li>
+<li><a href="https://www.npmjs.com/package/jdnconvertiblecalendar">jdnconvertiblecalendar@0.0.5</a></li>
+<li><a href="https://www.npmjs.com/package/jdnconvertiblecalendardateadapter">jdnconvertiblecalendardateadapter@0.0.13</a></li>
+<li><a href="https://www.npmjs.com/package/ngx-color-picker">ngx-color-picker@9.1.0</a></li>
+</ul>
+<h2 id="setup">Setup</h2>
+<p>The module supports runtime config to load the API configuration on load as opposed to on build. This helps run an App as a docker image in various environments. However, this requires some modifications in your app. We suggest building the app with <a href="https://cli.angular.io/">@angular/cli</a>.</p>
+<p>First, let's make a <code>config.dev.json</code> file in an additional folder <code>src/config/</code>:</p>
+<pre><code class="language-json">{
+  &quot;apiProtocol&quot;: &quot;http&quot;,
+  &quot;apiHost&quot;: &quot;0.0.0.0&quot;,
+  &quot;apiPort&quot;: 3333,
+  &quot;apiPath&quot;: &quot;&quot;,
+  &quot;jsonWebToken&quot;: &quot;&quot;,
+  &quot;logErrors&quot;: true
+}
+</code></pre>
+<p>It's possible to create several config files e.g. one for productive use. In this case, <code>logErrors</code> should be set to <code>false</code> and the filename would be <code>config.prod.json</code>. In the environment files, we have to add the corresponding name:</p>
+<pre><code class="language-typescript">export const environment = {
+  name: 'dev',      // &lt;-- add the name 'dev', 'prod', etc. here.
+  production: false
+};
+</code></pre>
+<p>The config files have to be integrated in <code>angular.json</code> in all "assets"-sections:</p>
+<pre><code class="language-json">&quot;assets&quot;: [
+    &quot;src/favicon.ico&quot;,
+    &quot;src/assets&quot;,
+    &quot;src/config&quot;    &lt;-- add this line and do not forget the comma on the previous line
+]
+</code></pre>
+<p>Then we can make a service that will fetch the configs:</p>
+<pre><code class="language-shell">ng generate service app-init
+</code></pre>
+<pre><code class="language-typescript">import { Injectable } from '@angular/core';
+import { KnoraApiConfig, KnoraApiConnection } from '@knora/api';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AppInitService {
+
+  static dspApiConnection: KnoraApiConnection;
+
+  static dspApiConfig: KnoraApiConfig;
+
+  constructor() { }
+
+  Init() {
+
+    return new Promise&lt;void&gt;((resolve) =&gt; {
+
+      // get api config information from temp storage
+      const dspApiConfig: KnoraApiConfig = window['tempConfigStorage'] as KnoraApiConfig;
+
+      // init dsp-api configuration
+      AppInitService.dspApiConfig = new KnoraApiConfig(
+        dspApiConfig.apiProtocol,
+        dspApiConfig.apiHost,
+        dspApiConfig.apiPort,
+        dspApiConfig.apiPath,
+        dspApiConfig.jsonWebToken,
+        dspApiConfig.logErrors
+      );
+
+      // set knora-api connection configuration
+      AppInitService.dspApiConnection = new KnoraApiConnection(AppInitService.dspApiConfig);
+
+      resolve();
+    });
+  }
+}
+</code></pre>
+<p>Once we have this service, we have to edit the <code>app.module.ts</code> with a function to load the config:</p>
+<pre><code class="language-typescript">export function initializeApp(appInitService: AppInitService) {
+  return (): Promise&lt;any&gt; =&gt; {
+    return appInitService.Init();
+  };
+}
+</code></pre>
+<p>Provide it in the main module and include the desired DSP-UI modules in the imports:</p>
+<pre><code class="language-typescript">import { DspApiConfigToken, DspApiConnectionToken, DspCoreModule, DspViewerModule } from '@dasch-swiss/dsp-ui';
+...
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    ProjectsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DspCoreModule,      // &lt;-- add the dsp-ui modules here
+    DspViewerModule
+  ],
+  providers: [
+      // add the following code block
+    AppInitService,
+    {
+      provide: APP_INITIALIZER,
+      useFactory: initializeApp,
+      deps: [AppInitService],
+      multi: true
+    },
+    {
+      provide: DspApiConfigToken,
+      useFactory: () =&gt; AppInitService.dspApiConfig
+    },
+    {
+      provide: DspApiConnectionToken,
+      useFactory: () =&gt; AppInitService.dspApiConnection
+    }
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+</code></pre>
+<p>Do not forget to import <code>APP_INITIALIZER</code> from <code>@angular/core</code> and the desired DSP-UI modules from <code>@dasch-swiss/dsp-ui</code>.</p>
+<p>Finally, the main.ts file must be modified to load the environment specific config file and test that the config is correct:</p>
+<pre><code class="language-typescript">import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
+import { environment } from './environments/environment';
+
+if (environment.production) {
+  enableProdMode();
+}
+
+function bootstrapFailed(result) {
+  console.error('bootstrap-fail! Config is missing or api parameters are not defined', result);
+}
+
+fetch(`config/config.${environment.name}.json`)
+  .then(response =&gt; response.json())
+  .then(config =&gt; {
+    if (!config) {
+      bootstrapFailed(config);
+      return;
+    }
+
+    // store the response somewhere that the AppInitService can read it.
+    window['tempConfigStorage'] = config;
+
+    platformBrowserDynamic()
+      .bootstrapModule(AppModule)
+      .catch(err =&gt; bootstrapFailed(err));
+  })
+  .catch(bootstrapFailed);
+
+</code></pre>
+<h2 id="usage">Usage</h2>
+<!-- TODO: add the modules to app.modules and use them as usual  -->
+<!-- app.modules -->
+<p>Add the desired modules from DSP-UI to the <code>app.module.ts</code>. <code>DspCoreModule</code> must be imported at the very minimum!</p>
+<pre><code class="language-typescript">@NgModule({
+  declarations: [
+    AppComponent,
+    ProjectsComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    DspCoreModule        // &lt;-- add the dsp-ui core module here
+  ],
+  providers: [ ... ]    // &lt;-- add providers as mentioned in section above
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+</code></pre>
+<p>For more usage examples, check the corresponding DSP-UI module documentation.</p>
+<hr />
+<h2 id="contribute-to-develop-dsp-ui-modules">Contribute to develop DSP-UI modules</h2>
+<p>If you want to contribute to develop DSP-UI modules with us, please consult the <a href="/developers/dsp-ui/contribution/">contribution guideline</a>.</p>
+<hr />
+<p>DSP-API and DSP-UI-LIB are <a href="http://www.gnu.org/philosophy/free-sw.en.html">free software</a>, released under <a href="http://www.gnu.org/licenses/agpl-3.0.en.html">GNU Affero General Public</a> license.</p>
+<p>It is developed by the design team of the <a href="http://dasch.swiss">Data and Service Center for the Humanities DaSCH</a> at the <a href="http://unibas.ch">University of Basel</a>.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../knora-api-js-lib/documentation/" title="Knora API JS lib" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Knora API JS lib
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="action/index-action/" title="Readme" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Readme
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.tabs'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

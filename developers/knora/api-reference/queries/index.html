@@ -1,0 +1,2488 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../../assets/images/dasch-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>Queries - DaSCH Service Platform Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.3f72e892.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../../assets/style/theme.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-build-queries" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../../.." title="DaSCH Service Platform Documentation" class="md-header-nav__button md-logo" aria-label="DaSCH Service Platform Documentation">
+      
+  <img src="../../../../assets/images/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            DaSCH Service Platform Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Queries
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../user-guide/" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../" class="md-tabs__link md-tabs__link--active">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../../community/faq/" class="md-tabs__link">
+          Community
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="DaSCH Service Platform Documentation" class="md-nav__button md-logo" aria-label="DaSCH Service Platform Documentation">
+      
+  <img src="../../../../assets/images/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    DaSCH Service Platform Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../user-guide/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../user-guide/project/" title="Project Management" class="md-nav__link">
+      Project Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../user-guide/data/" title="Data Management" class="md-nav__link">
+      Data Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../user-guide/user/" title="User Management" class="md-nav__link">
+      User Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../user-guide/system/" title="System Management" class="md-nav__link">
+      System Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Developers
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developers" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/" title="Knora Getting Started" class="md-nav__link">
+      Knora Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
+    
+    <label class="md-nav__link" for="nav-2-3">
+      API Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API Reference" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        API Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Queries
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="Queries" class="md-nav__link md-nav__link--active">
+      Queries
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#full-text-search" class="md-nav__link">
+    Full-text search
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-short-note-on-the-following-examples" class="md-nav__link">
+    A short note on the following examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-full-text-searches" class="md-nav__link">
+    Examples of full-text searches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparql-queries" class="md-nav__link">
+    SPARQL queries
+  </a>
+  
+    <nav class="md-nav" aria-label="SPARQL queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-forms" class="md-nav__link">
+    Query forms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-query-asking-for-all-data" class="md-nav__link">
+    A query asking for all data
+  </a>
+  
+    <nav class="md-nav" aria-label="A query asking for all data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-your-local-knora-installation" class="md-nav__link">
+    Using your local Knora installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-postman-and-http-post" class="md-nav__link">
+    Using Postman and HTTP POST
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-query-asking-for-one-specific-variable" class="md-nav__link">
+    A query asking for one specific variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-query-with-matching-on-multiple-triples" class="md-nav__link">
+    A query with matching on multiple triples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-strings-and-values" class="md-nav__link">
+    Searching for strings and values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-data-that-may-exist-or-not" class="md-nav__link">
+    Searching for data that may exist or not
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-data-that-doesnt-meet-a-condition" class="md-nav__link">
+    Searching for data that doesn't meet a condition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-joined-search" class="md-nav__link">
+    A joined search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asking-about-patterns" class="md-nav__link">
+    Asking about patterns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combining-search-conditions" class="md-nav__link">
+    Combining search conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering-data" class="md-nav__link">
+    Filtering data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip-a-number-of-results" class="md-nav__link">
+    Skip a number of results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subqueries" class="md-nav__link">
+    Subqueries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-results-in-variables" class="md-nav__link">
+    Storing results in variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting" class="md-nav__link">
+    Sorting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querying-a-remote-endpoint" class="md-nav__link">
+    Querying a remote endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queries-using-construct" class="md-nav__link">
+    Queries using CONSTRUCT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-efficiency" class="md-nav__link">
+    Query efficiency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sparql-query-result-formats" class="md-nav__link">
+    SPARQL Query Result Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="SPARQL Query Result Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sparql-query-result-xml-format" class="md-nav__link">
+    SPARQL Query Result XML Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sparql-query-result-json-format" class="md-nav__link">
+    SPARQL Query Result JSON Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-example-scripts" class="md-nav__link">
+    Python example scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#different-ways-to-send-queries" class="md-nav__link">
+    Different ways to send queries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gravsearch-queries" class="md-nav__link">
+    Gravsearch queries
+  </a>
+  
+    <nav class="md-nav" aria-label="Gravsearch queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gravsearch-query-examples" class="md-nav__link">
+    Gravsearch query examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1">
+    
+    <label class="md-nav__link" for="nav-2-4-1">
+      Knora
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Knora" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        Knora
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documentation/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documentation/rdf/" title="RDF" class="md-nav__link">
+      RDF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documentation/knora-base/" title="Knora-base ontology" class="md-nav__link">
+      Knora-base ontology
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../documentation/knora-admin/" title="Knora-admin ontology" class="md-nav__link">
+      Knora-admin ontology
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../knora-api-js-lib/documentation/" title="Knora API JS lib" class="md-nav__link">
+      Knora API JS lib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3" type="checkbox" id="nav-2-4-3">
+    
+    <label class="md-nav__link" for="nav-2-4-3">
+      DSP-UI modules
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DSP-UI modules" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        DSP-UI modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-2" type="checkbox" id="nav-2-4-3-2">
+    
+    <label class="md-nav__link" for="nav-2-4-3-2">
+      Action module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Action module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Action module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/index-action/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/admin-image/" title="AdminImage" class="md-nav__link">
+      AdminImage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/existing-name/" title="ExistingName" class="md-nav__link">
+      ExistingName
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/key/" title="Key" class="md-nav__link">
+      Key
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/message/" title="Message" class="md-nav__link">
+      Message
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/progress-indicator/" title="Progress indicator" class="md-nav__link">
+      Progress indicator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/sort-button/" title="SortButton" class="md-nav__link">
+      SortButton
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/stringify-string-literal/" title="StringifyStringLiteral" class="md-nav__link">
+      StringifyStringLiteral
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/action/truncate/" title="Truncate" class="md-nav__link">
+      Truncate
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-3" type="checkbox" id="nav-2-4-3-3">
+    
+    <label class="md-nav__link" for="nav-2-4-3-3">
+      Core module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Core module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Core module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/core/index-core/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-4" type="checkbox" id="nav-2-4-3-4">
+    
+    <label class="md-nav__link" for="nav-2-4-3-4">
+      Search module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Search module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-4">
+        <span class="md-nav__icon md-icon"></span>
+        Search module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/search/index-search/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/search/search-panel/" title="Search-panel" class="md-nav__link">
+      Search-panel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/search/fulltext-search/" title="Fulltext search" class="md-nav__link">
+      Fulltext search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/search/extended-search/" title="Extended search" class="md-nav__link">
+      Extended search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/search/expert-search/" title="Expert search" class="md-nav__link">
+      Expert search
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-5" type="checkbox" id="nav-2-4-3-5">
+    
+    <label class="md-nav__link" for="nav-2-4-3-5">
+      Viewer module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Viewer module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-5">
+        <span class="md-nav__icon md-icon"></span>
+        Viewer module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/viewer/index-viewer/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/documentation/viewer/search-results/" title="Search-results" class="md-nav__link">
+      Search-results
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../knora-web-app/documentation/" title="Knora web app" class="md-nav__link">
+      Knora web app
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../sipi/documentation/" title="Sipi" class="md-nav__link">
+      Sipi
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Contribution
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contribution" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp/contribution/" title="How to contribute" class="md-nav__link">
+      How to contribute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contribution/" title="Knora" class="md-nav__link">
+      Knora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../knora-api-js-lib/contribution/" title="Knora API JS lib" class="md-nav__link">
+      Knora API JS lib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../dsp-ui/contribution/" title="DSP-UI modules" class="md-nav__link">
+      DSP-UI modules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../knora-web-app/contribution/" title="Knora web app" class="md-nav__link">
+      Knora web app
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../sipi/contribution/" title="Sipi" class="md-nav__link">
+      Sipi
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Community
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Community" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Community
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../community/faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../community/product-updates/" title="Product Updates" class="md-nav__link">
+      Product Updates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../../community/about-us/" title="About us" class="md-nav__link">
+      About us
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#full-text-search" class="md-nav__link">
+    Full-text search
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-short-note-on-the-following-examples" class="md-nav__link">
+    A short note on the following examples
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples-of-full-text-searches" class="md-nav__link">
+    Examples of full-text searches
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sparql-queries" class="md-nav__link">
+    SPARQL queries
+  </a>
+  
+    <nav class="md-nav" aria-label="SPARQL queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#query-forms" class="md-nav__link">
+    Query forms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-query-asking-for-all-data" class="md-nav__link">
+    A query asking for all data
+  </a>
+  
+    <nav class="md-nav" aria-label="A query asking for all data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#using-your-local-knora-installation" class="md-nav__link">
+    Using your local Knora installation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-postman-and-http-post" class="md-nav__link">
+    Using Postman and HTTP POST
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-query-asking-for-one-specific-variable" class="md-nav__link">
+    A query asking for one specific variable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-query-with-matching-on-multiple-triples" class="md-nav__link">
+    A query with matching on multiple triples
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-strings-and-values" class="md-nav__link">
+    Searching for strings and values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-data-that-may-exist-or-not" class="md-nav__link">
+    Searching for data that may exist or not
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-data-that-doesnt-meet-a-condition" class="md-nav__link">
+    Searching for data that doesn't meet a condition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-joined-search" class="md-nav__link">
+    A joined search
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asking-about-patterns" class="md-nav__link">
+    Asking about patterns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#combining-search-conditions" class="md-nav__link">
+    Combining search conditions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filtering-data" class="md-nav__link">
+    Filtering data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#skip-a-number-of-results" class="md-nav__link">
+    Skip a number of results
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subqueries" class="md-nav__link">
+    Subqueries
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-results-in-variables" class="md-nav__link">
+    Storing results in variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sorting" class="md-nav__link">
+    Sorting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#querying-a-remote-endpoint" class="md-nav__link">
+    Querying a remote endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#queries-using-construct" class="md-nav__link">
+    Queries using CONSTRUCT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#query-efficiency" class="md-nav__link">
+    Query efficiency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sparql-query-result-formats" class="md-nav__link">
+    SPARQL Query Result Formats
+  </a>
+  
+    <nav class="md-nav" aria-label="SPARQL Query Result Formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sparql-query-result-xml-format" class="md-nav__link">
+    SPARQL Query Result XML Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sparql-query-result-json-format" class="md-nav__link">
+    SPARQL Query Result JSON Format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#python-example-scripts" class="md-nav__link">
+    Python example scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#different-ways-to-send-queries" class="md-nav__link">
+    Different ways to send queries
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gravsearch-queries" class="md-nav__link">
+    Gravsearch queries
+  </a>
+  
+    <nav class="md-nav" aria-label="Gravsearch queries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gravsearch-query-examples" class="md-nav__link">
+    Gravsearch query examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="how-to-build-queries">How to build queries</h1>
+<p>The simplest form of a query is a full-text search. For more complex queries than a full-text search, Knora offers a special query language called <a href="https://docs.knora.org/paradox/03-apis/api-v2/query-language.html">Gravsearch</a> which is based on the query language <a href="https://www.w3.org/TR/sparql11-overview/">SPARQL</a> (<strong>S</strong>PARQL <strong>P</strong>rotocol <strong>A</strong>nd <strong>R</strong>DF <strong>Q</strong>uery <strong>L</strong>anguage).</p>
+<p><br></p>
+<h2 id="full-text-search">Full-text search</h2>
+<p>Knora offers a full-text search that searches all textual representations of values and <code>rdfs:label</code>-labels of resources. The full-text search supports the <a href="https://lucene.apache.org/core/2_9_4/queryparsersyntax.html">Lucene Query Parser syntax</a>.
+Search terms can be seperated by a white space - then they will be combined using the Boolean operator <code>OR</code> since this is Lucene's default operator. Be aware, that the search terms have to be URL encoded!</p>
+<p>The recommended way to submit a full-text query is via <code>HTTP GET</code> in the following form.</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/searchValue[limitToResourceClass=resourceClassIRI][limitToStandoffClass=standoffClassIri][limitToProject=projectIRI][offset=Integer]
+</code></pre>
+<p>Most of these parameters can be set optionally:
+* <code>limitToResourceClass=resourceClassIRI</code> : this restricts the search to resources of the specified resource class and its subclasses.
+* <code>LimitToStandoffClass=standoffClassIRI</code> : this will force Knora to look for search terms that are marked up with the indicated standoff class.
+* <code>limitToProject=projectIRI</code> : this restricts the search to resources of the specified project.
+* <code>offset=Integer</code> : this parameter can be used to enable paging and to go through all the results request by request. The default value for the parameter <code>offset</code> is 0 which will return the first page of search results. Subsequent pages can be retrieved by increasing the parameter <code>offset</code> by one. This means, <code>offset=1</code> fetches the second page of serach results, <code>offset=2</code> the third, and so on. The amount of retrieved search results per page is defined in <code>app/v2</code> in the file <code>application.conf</code>.</p>
+<p>The first search parameter has to be preceded by a question mark <code>?</code> and any following parameter by an ampersand <code>&amp;</code>. A search value must have a minimal length of three characters (default value) as defined in <code>app/v2</code> in the file <code>application.conf</code>.</p>
+<p>Wildcards may be used.
+* An ampersand <code>&amp;</code> represents a single missing character. However, it has to be URL encoded as <code>%3F</code> because it has a special meaning in the URL syntax.
+* An asterisk <code>*</code> represents zero, one or multiple missing characters. The URL encode of an asterisk is <code>%2A</code>.</p>
+<p>To request the number of results rather than the results themselves, a count query can be made, where the first parameter has to be preceded by a question mark <code>?</code> and any following parameter by an ampersand <code>&amp;</code>:</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/count/searchValue[limitToResourceClass=resourceClassIRI][limitToStandoffClass=standoffClassIri][limitToProject=projectIRI][offset=Integer]
+</code></pre>
+<p>To combine two search terms with boolean <code>AND</code> the two search terms have to be combined with <code>AND</code>:</p>
+<pre><code>A AND B
+</code></pre>
+<p>For expressing that a query MUST contain the first search term and MAY contain the second search term, the plus sign (<code>+</code>; required operator) can be used.</p>
+<pre><code>+A B
+</code></pre>
+<p>Sometimes it may be useful to search for one term that doesn't appear in connection with another term. For such a query, the <code>NOT</code> operator can be used:</p>
+<pre><code>A NOT B
+</code></pre>
+<p>Be aware that a <code>NOT</code> search with only one term is not possible, there have to be two search terms!</p>
+<p>The minus sign (<code>-</code>; prohibit operator) enables to exclude hits that contain the term after the prohibit operator:</p>
+<pre><code>A -B
+</code></pre>
+<p><br></p>
+<h2 id="a-short-note-on-the-following-examples">A short note on the following examples</h2>
+<p>All examples in the following sections are from Bernoulli-Euler-Online (BEOL) which is a research platform for the study of early modern mathematics and science implemented within Knora.</p>
+<p><br></p>
+<h2 id="examples-of-full-text-searches">Examples of full-text searches</h2>
+<p>Let's assume we intend to search for the term "Bernoulli" with and without wildcard options. To send HTTP GET requests you can use a program such as <a href="https://www.getpostman.com/">Postman</a> or simply use the <a href="https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor/request_details">Firefox request detail panel</a> or a similar tool in your favorite browser. For HTTP POST requests, a program such as Postman has to be used.</p>
+<p>The query</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/Bernoulli
+</code></pre>
+<p>retrieves all resources containing the term "Bernoulli". The beginning of the request result when using Postman and chosing "JSON" as output format looks as follows:</p>
+<pre><code>{
+ &quot;@graph&quot;: [
+    {
+      &quot;@id&quot;: &quot;http://rdfh.ch/0801/--rbZIzLTNC4qrcpAAkjwA&quot;,
+      &quot;@type&quot;: &quot;beol:letter&quot;,
+      &quot;beol:hasText&quot;: {
+        &quot;@id&quot;: &quot;http://rdfh.ch/0801/--rbZIzLTNC4qrcpAAkjwA/values/wiWf4Ta_QX2jYOiRcUNZlQ&quot;,
+        &quot;@type&quot;: &quot;knora-api:TextValue&quot;,
+        &quot;knora-api:arkUrl&quot;: {
+          &quot;@type&quot;: &quot;xsd:anyURI&quot;,
+          &quot;@value&quot;: &quot;http://ark.dasch.swiss/ark:/72163/1/0801/==rbZIzLTNC4qrcpAAkjwAc/K0Ik_ElfQtOOTkgn4h4MnQQ&quot;
+        },
+</code></pre>
+<p>We learn that our search term "Bernoulli" appears in a letter which belongs to the BEOL project. If we possess the necessary permissions, the web adress given in <code>@value</code> copied to a browser guides us to the corresponding entry of the letter and all of its available additional information in the Knora App.</p>
+<p>The following query with the URL encoded (<code>%3F</code>) wildcard <code>&amp;</code></p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/Bernoull%3F
+</code></pre>
+<p>retrieves all resources containing the term "Bernoulli" in the same way as in the preceeding example.</p>
+<p>The wildcard <code>*</code> (URL encoded <code>%2A</code>) in the following query</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/Bern%2A
+</code></pre>
+<p>retrieves all resources containing the term "Bernoulli", but would also retrieve hits for e.g. "Bern" or "Bernina".</p>
+<p>To search only for the number of hits for the term "Bernoulli" the following count query can be used:</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/count/Bernoulli
+</code></pre>
+<p>The answer to this query is at the moment "1989":</p>
+<pre><code>{
+  &quot;schema:numberOfItems&quot;: 1989,
+  &quot;@context&quot;: {
+    &quot;schema&quot;: &quot;http://schema.org/&quot;
+  }
+}
+</code></pre>
+<p>If we only intend to search within the BEOL project for the term "Bern*", we can specify this in our full-text query, but we have to know the projectIRI of the BEOL project which is <code>http://rdfh.ch/projects/yTerZGyxjZVqFMNNKXCDPF1</code>:</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/Bern%2A?limitToProject=http://rdfh.ch/projects/yTerZGyxjZVqFMNNKXCDPF
+</code></pre>
+<p>For the use of wildcards just replace the letter(s) in the search term by one of the wildcards. Be aware that the first parameter after the search term has to be preceded by a question mark <code>?</code>. However, any following parameter has to be preceded by an ampersamd <code>&amp;</code>! Thus, a successful request with two parameters looks as follows:</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/Bernoulli?limitToProject=http://rdfh.ch/projects/yTerZGyxjZVqFMNNKXCDPF&amp;offset=1
+</code></pre>
+<p>We added here, that we want to see the second page of the results instead of the first one which is the default value (offset=0).</p>
+<p>To combine the two search terms "Bernoulli" and "Euler" the logical operator <code>AND</code> has to be used:</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/Bernoulli%20AND%20Euler
+</code></pre>
+<p>For expressing that a query must contain the first search term and may contain the second search term, the required operator <code>+</code> can be used:</p>
+<pre><code>HTTP GET request sent to https://api.dasch.swiss/v2/search/+Bernoulli%20Euler
+</code></pre>
+<p>Here it is required that the search results contain the term "Bernoulli", but it is optional that they contain the second term "Euler".</p>
+<p>Sometimes we may be interested in searching for one term that doesn't appear in connection with another term. For such a query, the <code>NOT</code> operator can be used:</p>
+<pre><code>https://api.dasch.swiss/v2/search/Bernoulli%20NOT%20Euler
+</code></pre>
+<p>With this query we are searching for everything that contains Bernoulli, but not Euler.</p>
+<p>If we want to exclude all search results that contain "Euler", the prohibit operator <code>-</code> has to be used:</p>
+<pre><code>https://api.dasch.swiss/v2/search/Bernoulli%20-Euler
+</code></pre>
+<p>Count queries for the above mentioned combinations of the search terms "Bernoulli" and "Euler" restricted to the BEOL project currently (Dec. 2019) produces the following numbers:
+|search term|number|
+|-----|:----:|
+|Bernoulli|1937|
+|Euler|1435|
+|Bernoulli%20AND%20Euler|165|
+|Bernoulli%20NOT%20Euler|1775|
+|Bernoulli%20OR%20Euler|3201|
+|Bernoulli%20Euler|3201|
+|+Bernoulli%20Euler|1937|
+|Bernoulli%20-Euler|1775|</p>
+<p><br></p>
+<h2 id="sparql-queries">SPARQL queries</h2>
+<p>SPARQL is a set of specifications that provide languages and protocols to query and manipulate RDF graph content on the Web or in an RDF triplestore. In the following the <a href="https://www.w3.org/TR/turtle/">Turtle</a> data format will be used to show each triple.</p>
+<p>The following introduction to SPARQL draws heavily on the book of <strong>Bob DuCharme, Learning SPARQL. Querying and Updating with SPARQL 1.1, 2nd edition, Sebastopol 2013</strong> which we warmly recommend for reading.</p>
+<p>The most basic keywords are <code>SELECT</code> and <code>WHERE</code>. Moreover, a very useful keyword is <code>LIMIT</code>.
+* <code>SELECT</code> names which part of the data we want to see. If all data should be shown, use <code>SELECT *</code>, the asterisk functions as wildcard.
+* <code>WHERE</code> is used to formulate a clause - it decides which data should be retrieved from the whole dataset.
+* <code>LIMIT</code> limits the query to the first e.g. 20 (<code>LIMIT 20</code>) or 100 hits. The limit has to be specified outside the curly braces of the <code>WHERE</code>-clause. If you've no idea what the test data are about or if you know that the dataset is large, it's very useful to limit your query in order not to ask too much from the query endpoint. Be aware, that if you're sorting your data, the <code>LIMIT</code> keyword will only apply after all data have been retrieved and sorted! Thus, <code>LIMIT</code> will give you the first results of the sorted data.</p>
+<p><br></p>
+<h3 id="query-forms">Query forms</h3>
+<p>In SPARQL four different query forms do exist: <code>SELECT</code>, <code>CONSTRUCT</code>, <code>ASK</code> and <code>DESCRIBE</code>.
+* The most common one is probably <code>SELECT</code> which enables requesting data from a collection.
+* Using <code>CONSTRUCT</code> instead will return triples. Triples can be retrieved without modifying them or the retrieved triples can be used to generate new triples. <code>CONSTRUCT</code> enables to copy, create and convert RDF data, and it makes it easier to identify data that do not conform to specific rules.
+* Using <code>ASK</code> asks the processor whether a certain given graph pattern fits a set of triples in the requested dataset or not. The processor returns a boolean <code>true</code> or <code>false</code>.
+* <code>DESCRIBE</code> asks for triples which describe a particular resource. This query form isn't popular because different processors return different triples as a description of the named resource.</p>
+<p>Our <code>knora-api</code> only allows <code>CONSTRUCT</code> requests and a limited set of SPARQL keywords. Thus, the main part of the following examples to illustrate the possibilities of SPARQL use the SPARQL endpoint of Wikipedia called <a href="http://dbpedia.org/snorql/">DBpedia</a> accessible at http://dbpedia.org/snorql/. There, the following prefixes are predefined:</p>
+<pre><code>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+PREFIX dc: &lt;http://purl.org/dc/elements/1.1/&gt;
+PREFIX : &lt;http://dbpedia.org/resource/&gt;
+PREFIX dbpedia2: &lt;http://dbpedia.org/property/&gt;
+PREFIX dbpedia: &lt;http://dbpedia.org/&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+</code></pre>
+<p>Additional prefixes can be defined in the query window before the <code>SELECT</code> statement, e.g.</p>
+<pre><code>PREFIX knora-api: &lt;https://api.dasch.swiss/ontology/knora-api/v2#&gt;
+</code></pre>
+<p><br></p>
+<h3 id="a-query-asking-for-all-data">A query asking for all data</h3>
+<p>If we have no idea what our data is all about, a nice first query is the following - but don't forget to set a limit because it asks for all the triples in the dataset!</p>
+<h4 id="using-your-local-knora-installation">Using your local Knora installation</h4>
+<p>Go to <code>http://0.0.0.0:7200/sparql</code> in your browser which will guide you to the GraphDB SPARQL Query &amp; Update page if you've Knora installed locally. Copy the following code into the window:</p>
+<pre><code>PREFIX knora-api: &lt;https://api.dasch.swiss/ontology/knora-api/v2#&gt;
+
+select * where {
+    ?s ?p ?o .
+} limit 100
+</code></pre>
+<p>This query retrieves the first 100 triples of the data. The asterisk after <code>SELECT</code> indicates that all variables should be selected to get bound in this query. Setting a limit with the keyword <code>LIMIT</code> prevents a server timeout.</p>
+<h4 id="using-postman-and-http-post">Using Postman and HTTP POST</h4>
+<p>If you haven't installed Knora locally or if you want to run the same query on our live-server, you'll see that this query isn't allowed because it's supposed to be too broad to be meaningful. Additionally, the query has to be adapted because only <code>CONSTRUCT</code> queries are allowed, the main resource has to be named and the keyword <code>LIMIT</code> is not supported. Remember, that all variables in the <code>CONSTRUCT</code> must appear also in the <code>WHERE</code>-clause! Open Postman and chose</p>
+<pre><code>HTTP POST sent to https://api.dasch.swiss/v2/searchextended
+</code></pre>
+<p>Then click "Body" and chose "raw". Theoretically, the  adapted query asking for all resources in Knora would look like the following:</p>
+<pre><code>PREFIX knora-api: &lt;http://api.knora.org/ontology/knora-api/simple/v2#&gt;
+
+CONSTRUCT {
+   ?s knora-api:isMainResource true .
+}
+WHERE {
+    ?s a knora-api:Resource .
+}
+</code></pre>
+<p>This is a syntactically correct query, but it returns no results due to access limitations.</p>
+<p>However, we can ask for all resources of a certain kind, e.g. for all who are a <code>foaf:Person</code>:</p>
+<pre><code>PREFIX knora-api: &lt;http://api.knora.org/ontology/knora-api/simple/v2#&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+
+CONSTRUCT {
+   ?s knora-api:isMainResource true .
+}
+WHERE {
+    ?s a knora-api:Resource .
+    ?s a foaf:Person .
+}
+</code></pre>
+<p>If you do a count search, i.e. sending a POST request to <code>https://api.dasch.swiss/v2/searchextended/search</code>, you retrieve 2643 results at the moment.</p>
+<p><br></p>
+<h3 id="a-query-asking-for-one-specific-variable">A query asking for one specific variable</h3>
+<p>If we are interested in works of the artist Marc Chagall, we can send a first query to the DBpedia endpoint, asking for information about Chagall with results stored in the variable <code>?artist</code>:</p>
+<pre><code>SELECT ?artist
+WHERE
+{
+ &lt;http://dbpedia.org/resource/Chagall&gt; ?p ?artist .
+}
+</code></pre>
+<p>The angle brackets surrounding "http://dbpedia.org/resource/Chagall" tell the processor that it is an URI. The query retrieves the following results in tabular form (if the simple output format "Browse" is chosen):
+|artist|
+|-----|
+|"Chagall"@en|
+|158693|
+|600433204|
+|:Marc_Chagall <a href="http://dbpedia.org/snorql/?describe=http%3A//dbpedia.org/resource/Marc_Chagall">link</a>|
+|<a href="http://en.wikipedia.org/wiki/Chagall">http://en.wikipedia.org/wiki/Chagall</a> <a href="http://dbpedia.org/snorql/?describe=http%3A//en.wikipedia.org/wiki/Chagall">link</a>|
+|<a href="http://en.wikipedia.org/wiki/Chagall?oldid=600433204">http://en.wikipedia.org/wiki/Chagall?oldid=600433204</a> <a href="http://dbpedia.org/snorql/?describe=http%3A//en.wikipedia.org/wiki/Chagall%3Foldid%3D600433204">link</a>|</p>
+<p>After having verified in this way that <a href="http://dbpedia.org/resource/Chagall">http://dbpedia.org/resource/Chagall</a> is a valid URI, we can ask for properties and values with the following query:</p>
+<pre><code>SELECT ?property ?hasValue
+WHERE {
+  &lt;http://dbpedia.org/resource/Marc_Chagall&gt; ?property ?hasValue .
+}
+</code></pre>
+<p>One of the results obtained is a property <code>dbpedia:ontology/wikiPageExternalLink</code> with the value <code>"&lt;http://www.thejewishmuseum.org/collection/search?artist=Marc%20Chagall%2C%20French%2C%20b.%20Belorussia%2C%201887-1985&gt;</code>. Following this link leads us to the homepage of the Jewish Museum in New York and the works of Marc Chagall the museum possesses.</p>
+<p>If you intend to query data that isn't stored locally, the keyword <code>FROM</code> could be used to specify the data set. It is also possible to read data from a file when using the <code>FROM</code> keyword. If the data are stored in a file named <code>example.ttl</code> stored in the same folder as the query itself, then the <code>SELECT</code>-part of the request looks as follows:</p>
+<pre><code>SELECT * &lt;example.ttl&gt;
+WHERE {
+   ...
+}
+</code></pre>
+<p><br></p>
+<h3 id="a-query-with-matching-on-multiple-triples">A query with matching on multiple triples</h3>
+<p>The following query uses a <code>?films</code> variable to tie together two triple patterns in the <code>WHERE</code>-clause.</p>
+<pre><code>SELECT ?films
+WHERE {
+   ?films &lt;http://dbpedia.org/ontology/starring&gt; :Iggy_Pop .
+   ?films &lt;http://dbpedia.org/ontology/starring&gt; :Johnny_Depp .
+}
+</code></pre>
+<p>Such a set of triple patterns within curly braces is called a <em>graph pattern</em>. The <code>?films</code> variable is used in two different triples to find connected triples in the queried data. The first triple looks for films starring Iggy Pop, the second triple then searches if in one of these films also Johnny Depp was involved. The result shows all the films these actors played in together: Cry Baby and Dead Man.</p>
+<p><br></p>
+<h3 id="searching-for-strings-and-values">Searching for strings and values</h3>
+<p>The keyword <code>FILTER</code> tells the query processor to return only those triples which meet the given condition in the filter. This time we're searching for films starring David Bowie, but only those which have a runtime longer than 89 minutes.</p>
+<pre><code>SELECT ?BowieFilm ?runtime
+WHERE {
+  ?BowieFilm &lt;http://dbpedia.org/ontology/starring&gt; :David_Bowie .
+  ?BowieFilm &lt;http://dbpedia.org/ontology/Work/runtime&gt; ?runtime .
+  FILTER (xsd:double(?runtime) &gt; 89.0 )
+}
+ORDER BY xsd:double(?runtime)
+</code></pre>
+<p>The keyword <code>ORDER BY</code> allows to sort the results with runtime in increasing order. Be aware that it is necessary to specify the datatype <code>xsd:double</code> of the <code>?runtime</code> variable, otherwise the filter and also the sorting doesn't work properly!</p>
+<p><br></p>
+<h3 id="searching-for-data-that-may-exist-or-not">Searching for data that may exist or not</h3>
+<p>The keyword <code>OPTIONAL</code> can be used to express "show this value if it exists".</p>
+<pre><code>SELECT *
+WHERE
+{
+   &lt;http://dbpedia.org/resource/Pink_Floyd&gt; &lt;http://dbpedia.org/ontology/formerBandMember&gt; ?members .
+   OPTIONAL {
+      ?members &lt;http://dbpedia.org/ontology/deathDate&gt; ?deathDate .
+   }
+}
+</code></pre>
+<p>The above query asks for the former members of the band Pink Floyd and for their death date if they passed away already. If they still enjoy their life, their names are listed anyway since the additional information about the death date is set in an <code>OPTIONAL</code> graph pattern. If there is more than one <code>OPTIONAL</code> triple pattern, they
+are processed in the order the processor sees them. Hence, the order of <code>OPTIONAL</code> patterns matters - this fact can be taken advantage of. However, excessive use of the keyword <code>OPTIONAL</code> can slow down the queries when dealing with large datasets!</p>
+<p><br></p>
+<h3 id="searching-for-data-that-doesnt-meet-a-condition">Searching for data that doesn't meet a condition</h3>
+<p>While cleaning up data it is very useful if one can search for missing entries. <code>FILTER NOT EXISTS</code> is a filter condition that returns a boolean value <code>true</code> if the specified graph pattern doesn't exist.</p>
+<pre><code>SELECT *
+WHERE
+{
+   ?artist rdf:type &lt;http://dbpedia.org/ontology/Artist&gt; .
+   FILTER NOT EXISTS {?artist dbpedia2:works ?works }
+}
+LIMIT 1000
+</code></pre>
+<p>When searching dbpedia data I realised that the information provided for different artists isn't very consistent. If we would intend to homogenise the basic information given for each artist we could use the above query to identify those for which the basic information about at least some of their works is still missing.</p>
+<p>Another possibility is to use the keyword <code>MINUS</code>. As its name suggests, it subtracts from a group A all those which satisfy the condition. The last query using the keyword <code>MINUS</code> looks as follows:</p>
+<pre><code>SELECT *
+WHERE
+{
+   ?artist rdf:type &lt;http://dbpedia.org/ontology/Artist&gt; .
+   MINUS {?artist dbpedia2:works ?works }
+}
+LIMIT 1000
+</code></pre>
+<p>Be aware that <code>FILTER NOT EXISTS</code> and <code>MINUS</code> <em>may</em> return different results!</p>
+<p><br></p>
+<h3 id="a-joined-search">A joined search</h3>
+<p>To link up different sets of data the same variable can be in the object position in one triple and in the subject position of another triple as in the following example:</p>
+<pre><code>SELECT DISTINCT ?actor ?value
+WHERE
+{
+   ?film &lt;http://dbpedia.org/ontology/starring&gt; ?actor .
+   ?actor &lt;http://dbpedia.org/ontology/birthYear&gt; ?value .
+}
+LIMIT 1000
+</code></pre>
+<p>In this query with the first triple we ask for all actors, in the second triple for the birth dates of the actors. The <code>DISTINCT</code> keyword tells the processor that duplicate answers shouldn't be displayed, thus, redundant results are eliminated. Without the <code>DISTINCT</code> keyword we would receive lots of identical responses since most actors played in more than one film.</p>
+<p>Whether the queried data stem from the same repository or from different ones doesn't matter as long there are resource URIs in one dataset that can be paralleled with resource URIs in another.</p>
+<p><br></p>
+<h3 id="asking-about-patterns">Asking about patterns</h3>
+<p>Property paths are a way to express more extensive patterns to look for. They provide a possibility to search for the requested data and in addition to that keep looking for more data. An example where this may be useful is the citation pattern of a certain paper. By simply adding a <code>+</code> sign we can tell the query processor to look for papers that cite paper A, and papers that cite those, etc. until the tree of papers is finished. The plus sign means "one or more". One could use an asterisk instead, which means "zero or more". It is also possible to be much more specific by using a property path which asks for papers that are exactly three links away, i.e. papers that cited papers that cited papers that cited paper A. This is laid out by a a series of steps separated by slashes. The <code>WHERE</code>-clauses of such queries could look like as follows:</p>
+<table>
+<thead>
+<tr>
+<th><code>WHERE</code>-clause</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>WHERE {?s :cites :paperA .}</code></td>
+<td>papers that cited paper A.</td>
+</tr>
+<tr>
+<td><code>WHERE {?s :cites+ :paperA .}</code></td>
+<td>one or more links away: papers that cited paper A, and papers that cited those, and papers that cited those, etc.</td>
+</tr>
+<tr>
+<td><code>WHERE {?s :cites* :paperA .}</code></td>
+<td>zero or more links away: papers that cited paper A, and papers that cited those, and papers that cited those, etc.</td>
+</tr>
+<tr>
+<td><code>WHERE {?s :cites/:cites/:cites :paperA .}</code></td>
+<td>three links away: papers that cited papers that cited paper A.</td>
+</tr>
+</tbody>
+</table>
+<p>Property paths are powerful to ask about patterns in all kinds of datasets. They are also very useful to cope with data which has been prepared or published with differing naming conventions. One such specific example is if we're interested in the total population of the British Islands:</p>
+<pre><code>CONSTRUCT {
+    ?country &lt;http://dbpedia.org/ontology/populationTotal&gt; ?pop
+} WHERE {
+    VALUES ?country {
+        :England
+        :Scotland
+        :Wales
+        :Northern_Ireland
+        :Ireland
+    }
+    ?country &lt;http://dbpedia.org/property/populationCensus&gt; | &lt;http://dbpedia.org/ontology/populationTotal&gt; ?pop .
+}
+</code></pre>
+<p>For all countries except Ireland the corresponding number is returned when asking for <code>&lt;http://dbpedia.org/property/populationCensus&gt;</code>. To find Ireland's population we need to use another predicate, namely <code>&lt;http://dbpedia.org/ontology/populationTotal&gt;</code>. Use of the so-called alternative property path <code>|</code> as in the above example allows searching for both options at the same time. Furthermore, using <code>CONSTRUCT</code> instead of <code>SELECT</code> enables to connect each country to its population with <code>&lt;http://dbpedia.org/ontology/populationTotal&gt;</code>, thus returning consistent triples!</p>
+<p><br></p>
+<h3 id="combining-search-conditions">Combining search conditions</h3>
+<p>The <code>UNION</code> keyword allows to specify multiple different graph pattern and to ask for a combination of all the data which fit any of these patterns. No connection between the sets of data need to be specified. However, probably it is more useful to use <code>UNION</code> for retrieving two overlapping sets of data.</p>
+<pre><code>SELECT *
+WHERE
+{
+   {?artist rdf:type &lt;http://dbpedia.org/ontology/Artist&gt; .
+    ?artist &lt;http://dbpedia.org/ontology/birthPlace&gt; &lt;http://dbpedia.org/resource/Russia&gt; .
+    ?artist &lt;http://dbpedia.org/ontology/deathPlace&gt; &lt;http://dbpedia.org/resource/Paris&gt; . }
+  UNION
+   {?artist rdf:type &lt;http://dbpedia.org/ontology/Artist&gt; .
+    ?artist &lt;http://dbpedia.org/ontology/deathPlace&gt; &lt;http://dbpedia.org/resource/Saint-Paul-de-Vence&gt; . }
+}
+</code></pre>
+<p>The above query asks for all artists that were born in Russia and died in Paris and for all those artists who died in St. Paul de Vence.</p>
+<p><br></p>
+<h3 id="filtering-data">Filtering data</h3>
+<p>The keyword <code>FILTER</code> takes a single argument and it is used to retrieve those triples that match the filter argument. The filter argument can contain strings, a function or a simple comparison. Here are a few examples of filter arguments and the corresponding queries:</p>
+<table>
+<thead>
+<tr>
+<th>Filter argument</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>FILTER (regex(?o, "Leiden","i"))</code></td>
+<td>searches in the ?o value for the substring "Leiden", the "i" means case insensitivity.</td>
+</tr>
+<tr>
+<td><code>FILTER (?o &lt; 10)</code></td>
+<td>searches for all items with ?o values of less than 10.</td>
+</tr>
+<tr>
+<td><code>FILTER (!(isURI(?city)))</code></td>
+<td>returns a boolean <code>true</code> if the value for ?city isn't a proper URI, the <code>!</code> means "not".</td>
+</tr>
+</tbody>
+</table>
+<pre><code>SELECT *
+WHERE
+{
+   ?s rdfs:label ?o .
+   FILTER (regex(?o, &quot;Leiden&quot;,&quot;i&quot;))
+}
+LIMIT 1000
+</code></pre>
+<pre><code>SELECT DISTINCT ?actor ?year
+WHERE
+{
+   ?film &lt;http://dbpedia.org/ontology/starring&gt; ?actor .
+   ?actor &lt;http://dbpedia.org/ontology/birthDate&gt; ?year .
+   FILTER (xsd:date(?year) &gt; &quot;1980-01-01&quot;^^xsd:date)
+}
+LIMIT 1000
+</code></pre>
+<p>Be aware that it is necessary to specify the datatype <code>xsd:date</code> of the <code>?year</code> variable, otherwise the filter doesn't work properly.</p>
+<pre><code>SELECT *
+WHERE
+{
+   &lt;http://dbpedia.org/resource/Leiden&gt; a ?o .
+   FILTER (!(isURI(?o)))
+}
+</code></pre>
+<p>This query retrieves no results since all values for <code>?o</code> for the city of Leiden in dbpedia are proper URIs.</p>
+<p><br></p>
+<h3 id="skip-a-number-of-results">Skip a number of results</h3>
+<p>The <code>OFFSET</code> keyword can be used to tell the processor to skip a certain number of search results before picking those to return. This is useful for paging. Just type <code>OFFSET</code> and an integer number (e.g. <code>OFFSET 5</code>) after the last closing curly brace of the query.</p>
+<p><br></p>
+<h3 id="subqueries">Subqueries</h3>
+<p>Subqueries are queries inside queries. With the help of subqueries a complex query can be broken down into easier manageable parts. Each subquery must be enclosed in its own set of curly braces.</p>
+<pre><code>SELECT ?capital ?latitude
+WHERE {
+  {
+    SELECT ?capital
+    WHERE { ?capital ?p &lt;http://dbpedia.org/resource/Category:Capitals_in_Europe&gt; . }
+  }
+  {
+    SELECT *
+    WHERE { ?capital &lt;http://dbpedia.org/property/latd&gt; ?latitude .
+            FILTER (?latitude &lt; 52.0)}
+  }
+}
+ORDER BY DESC(?latitude)
+</code></pre>
+<p>This query first asks for all capital cities of Europe. The subquery then retrieves the corresponding geographical latitudes and filters out all of them with latitudes larger than 52.0°. Finally, the results are sorted in decreasing order of geographical latitude.</p>
+<p><br></p>
+<h3 id="storing-results-in-variables">Storing results in variables</h3>
+<p>The <code>AS</code> keyword can be used to store the query result in a variable.</p>
+<pre><code>SELECT (SUM(?height) AS ?total)
+WHERE {
+  ?skyscrapers &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Skyscrapers_in_Manhattan&gt; .
+  ?skyscrapers &lt;http://dbpedia.org/ontology/height&gt; ?height .
+}
+</code></pre>
+<p>The above example asks for the heights of all skyscrapers in Manhattan, the sum of all their heights is calculated and then stored in the variable <code>?total</code>. The <code>SUM()</code> function adds up all values.</p>
+<p>If we're not interested in the sum of the heights of the skyscrapers in Manhattan, but rather in the tallest, the shortest or the average value, the functions <code>MAX()</code>, <code>MIN()</code> or <code>AVG()</code> can be used - they enable to find the maximum, minmum or the average value. Just replace <code>SUM</code> in the query by <code>MAX</code>, <code>MIN</code> or <code>AVG</code>.</p>
+<p>A more common way of assigning a value to a variable is with the keyword <code>BIND</code>. Arithmetic expressions can be used when a new value is created with the help of the keyword <code>BIND</code>: <code>+</code> for addition, <code>-</code> for subtraction, <code>*</code> for multiplication and <code>/</code> for division.</p>
+<pre><code>SELECT ?elmax ?elmin ?eldiff
+WHERE {
+  &lt;http://dbpedia.org/resource/Rouffignac&gt; &lt;http://dbpedia.org/ontology/maximumElevation&gt; ?elmax .
+  &lt;http://dbpedia.org/resource/Rouffignac&gt; &lt;http://dbpedia.org/ontology/minimumElevation&gt; ?elmin .
+  BIND (?elmax - ?elmin AS ?eldiff)
+}
+</code></pre>
+<p>We asked for the maximum and minimum elevation of the cave of Rouffignac, calculated the elevation difference and stored it in a variable <code>?eldiff</code> with the help of the keyword <code>BIND</code>.</p>
+<p><br></p>
+<h3 id="sorting">Sorting</h3>
+<p>The keyword <code>ORDER BY</code> enables the sorting of data. Values can e.g. be sorted in ascending or descending order - the ascending order is the default, for a descending order the sort key has to be wrapped in the <code>DESC()</code> function.</p>
+<pre><code>SELECT ?BowieFilm ?runtime
+WHERE {
+  ?BowieFilm &lt;http://dbpedia.org/ontology/starring&gt; :David_Bowie .
+  ?BowieFilm &lt;http://dbpedia.org/ontology/Work/runtime&gt; ?runtime .
+}
+ORDER BY DESC(xsd:double(?runtime))
+</code></pre>
+<p>This example is almost identical to the one in the section "Searching for strings and values", but we eliminated the filter and now we list all films in decreasing order of runtime. Be aware that it is necessary to specify the datatype <code>xsd:double</code> of the ?runtime variable, otherwise the filter and also the sorting doesn't work properly!</p>
+<p>Sorting on multiple keys is possible if the key value names are separated by spaces:</p>
+<pre><code>SELECT ?height ?floors
+WHERE {
+  ?skyscrapers &lt;http://purl.org/dc/terms/subject&gt; &lt;http://dbpedia.org/resource/Category:Skyscrapers_in_Manhattan&gt; .
+  ?skyscrapers &lt;http://dbpedia.org/ontology/height&gt; ?height .
+  ?skyscrapers &lt;http://dbpedia.org/ontology/floorCount&gt; ?floors .
+}
+ORDER BY DESC(?floors) DESC(?height)
+</code></pre>
+<p>This query returns all skyscrapers of Manhattan sorted by their number of floors and in the second place by their height.</p>
+<p><br></p>
+<h3 id="querying-a-remote-endpoint">Querying a remote endpoint</h3>
+<p>The <code>SERVICE</code> keyword provides a possibility to query remote data from a distant SPARQL endpoint. The usual way to formulate such a query is the following with an outer <code>SELECT</code> or <code>CONSTRUCT</code> indicating which values we're interested in:</p>
+<pre><code>PREFIX xy: &lt;http://your.external.querypoint&gt;
+
+SELECT ?p ?o
+WHERE {
+  SERVICE &lt;http://your.external.querypoint/sparql&gt;
+  {xy:Person_XY ?p ?o}
+}
+</code></pre>
+<p>However, the SPARQL Explorer for DBpedia doesn't allow such queries to external query points. Such requests have to be sent with e.g. python scripts - see section "Python example scripts".</p>
+<p><br></p>
+<h3 id="queries-using-construct">Queries using <code>CONSTRUCT</code></h3>
+<p>In contrast to a <code>SELECT</code> query, a <code>CONSTRUCT</code> query specifies a triple to create with each set of values that got bound to the three variables while it has the same graph pattern following the <code>WHERE</code> keyword. Thus, the following <code>SELECT</code> version of a query asking for all information - subjects, predicates and objects of all triples - in DBpedia where the same subject has a <code>foaf:givenName</code> value of "Peter" and a <code>foaf:surname</code> value of "Morris"</p>
+<pre><code>SELECT ?person ?p ?o
+WHERE {
+  ?person &lt;http://xmlns.com/foaf/0.1/givenName&gt; &quot;Peter&quot;@en ;
+          &lt;http://xmlns.com/foaf/0.1/surname&gt; &quot;Morris&quot;@en ;
+          ?p ?o .
+}
+</code></pre>
+<p>corresponds to the following <code>CONSTRUCT</code> version:</p>
+<pre><code>CONSTRUCT
+{ ?person ?p ?o . }
+WHERE {
+  ?person &lt;http://xmlns.com/foaf/0.1/givenName&gt; &quot;Peter&quot;@en ;
+          &lt;http://xmlns.com/foaf/0.1/surname&gt; &quot;Morris&quot;@en ;
+          ?p ?o .
+}
+</code></pre>
+<p><br></p>
+<h3 id="query-efficiency">Query efficiency</h3>
+<p>Sometimes there are different possibilities for a query to ask for the same set of information which differ in efficiency. The heart of any query is the <code>WHERE</code>-clause and the order of its components and the functions it calls can speed things up or slow them down. Although the order of a graph pattern's triple in a <code>WHERE</code>-clause does not effect the query results, the ordering may have a huge effect on the speed of the query's execution. Here are a few rules of thumb one should keep in mind:
+* You can speed up your searches if you reduce the search space as much as possible as soon as possible.
+* The keywort <code>OPTIONAL</code> will very likely slow your query down considerably. The best optimization is to avoid the use of <code>OPTIONAL</code> whenever possible.
+* Also the order of triple pattern influences the execution time. The fewer triples a triple pattern matches against the more it narrows down the search space and hence the faster the query processor will finish its job. Usually, a triple pattern with more unbound variables will match against more triples than a triple pattern with less unbound variables. Furthermore, the variable's position in the triple matters: a given dataset is more likely to have the same property in the predicate position of a large number of triples than in the subject position.
+* Moving a <code>FILTER</code> statement earlier can help to reduce the serach space as long as all variables referenced in the <code>FILTER</code> statement have already been bound.
+* The use of property paths can be expensive in terms of execution time.</p>
+<p>Outside the <code>WHERE</code>-clause the following points should be kept in mind:
+* Naming fewer variables in the <code>SELECT</code> statement can make the query run faster.
+* Sorting of the returned values with <code>ORDER BY</code> costs some time.</p>
+<p><br></p>
+<h3 id="sparql-query-result-formats">SPARQL Query Result Formats</h3>
+<p>The retrieved results can usually be returned in different formats, suitable for the different needs of different target groups. Standardized formats are: E<strong>x</strong>tensible <strong>M</strong>arkup <strong>L</strong>anguage (XML), <strong>J</strong>ava<strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation (JSON), <strong>C</strong>omma-<strong>S</strong>eparated <strong>V</strong>alue (CSV) and <strong>T</strong>abular-<strong>S</strong>eparated <strong>V</strong>alue (TSV). These formats do not only differ in the syntax used to represent the query results, but also in the amount of metadata provided with the results. For our purposes especially the XML and the JSON formats are useful.</p>
+<h4 id="sparql-query-result-xml-format">SPARQL Query Result XML Format</h4>
+<p>The SPARQL query result XML format describes a standard XML format for returning the results of a SPARQL query. The structure of a returned XML document is as follows:
+* The document element is called <code>sparql</code> and it has two child elements - the <code>head</code> element lists the selected variable names and the <code>results</code> element contains the actual results.
+* The returned results are stored in <code>result</code> children of the <code>results</code> element with a <code>binding</code> child for each bound variable.</p>
+<h4 id="sparql-query-result-json-format">SPARQL Query Result JSON Format</h4>
+<p>A JSON object is defined as “an unordered collection of zero or more name-value pairs, where a name is a string and a value is a string, number, boolean, null, object, or array.” The syntax is as follows:
+* Objects are in curly braces.
+* A name-value pair is separated by a colon. The name has to be unique within an object.
+* A list of name-value pairs is delimited by commas.
+* Arrays are in square braces.</p>
+<p>The results of a <code>SELECT</code> query in JSON format are a table. The uppermost JSON object has two name-value pairs <code>head</code> and <code>results</code> - both have an object as their values. The variables the <code>SELECT</code> query asked for a stored in the <code>vars</code> value of the <code>head</code> object. The most important part of the <code>results</code> element is its <code>bindings</code> object. Each object in the <code>bindings</code> array has a name-value pair for each requested variable.</p>
+<h4 id="python-example-scripts">Python example scripts</h4>
+<p>If you have <a href="https://www.python.org/">Python 3</a> installed on your computer the following SPARQL query can be stored in a file <code>testxml.py</code> and run from the directory where the file is stored with the command <code>python testxml.py</code>.</p>
+<p>We query the dbpedia SPARQL endpoint for the ID of Jakob Bernoulli and return the result in XML format.</p>
+<pre><code># Send SPARQL query to dbpedia SPARQL endpoint, store and output result in XML format.
+
+import urllib.request
+
+endpointURL = &quot;http://dbpedia.org/sparql&quot;
+query = &quot;&quot;&quot;
+SELECT ?bernoulliID WHERE {
+   &lt;http://dbpedia.org/resource/Jakob_Bernoulli&gt;
+   &lt;http://dbpedia.org/ontology/wikiPageID&gt; ?bernoulliID . }
+&quot;&quot;&quot;
+escapedQuery = urllib.parse.quote(query)
+requestURL = endpointURL + &quot;?query=&quot; + escapedQuery
+request = urllib.request.Request(requestURL)
+result = urllib.request.urlopen(request)
+print (result.read())
+</code></pre>
+<p>The output in XML format looks as follows:</p>
+<pre><code>&lt;sparql xmlns=&quot;http://www.w3.org/2005/sparql-results#&quot;
+        xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd&quot;&gt;
+ &lt;head&gt;
+   &lt;variable name=&quot;bernoulliID&quot;/&gt;
+ &lt;/head&gt;
+ &lt;results distinct=&quot;false&quot; ordered=&quot;true&quot;&gt;
+   &lt;result&gt;
+     &lt;binding name=&quot;bernoulliID&quot;&gt;
+       &lt;literal datatype=&quot;http://www.w3.org/2001/XMLSchema#integer&quot;&gt;7500054&lt;/literal&gt;
+     &lt;/binding&gt;
+   &lt;/result&gt;
+ &lt;/results&gt;
+&lt;/sparql&gt;
+</code></pre>
+<p>We are told that the bound variable is named "bernoulliID" and we receive the information that the questioned ID is a literal value, namely the integer 7500054.</p>
+<p>The following SPARQL query can be stored in a file <code>testjson.py</code> and run from the directory where the file is stored with the command <code>python testjson.py</code>.</p>
+<p>We query the dbpedia SPARQL endpoint for the labels of the resource "Switzerland" and return the result in JSON format.</p>
+<pre><code># Query dbpedia SPARQL endpoint about labels of resource Switzerland
+
+from SPARQLWrapper import SPARQLWrapper, JSON
+
+sparql = SPARQLWrapper(&quot;http://dbpedia.org/sparql&quot;)
+sparql.setQuery(&quot;&quot;&quot;
+    PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+    SELECT ?label
+    WHERE { &lt;http://dbpedia.org/resource/Switzerland&gt; rdfs:label ?label }
+&quot;&quot;&quot;)
+sparql.setReturnFormat(JSON)
+results = sparql.query().convert()
+
+if (len(results[&quot;results&quot;][&quot;bindings&quot;]) == 0):
+    print (&quot;No results found.&quot;)
+else:
+    for result in results[&quot;results&quot;][&quot;bindings&quot;]:
+        print(result[&quot;label&quot;][&quot;value&quot;])
+</code></pre>
+<p>The output in JSON format looks as follows:</p>
+<pre><code>Switzerland
+سويسرا
+Schweiz
+Suiza
+Suisse
+Svizzera
+スイス
+Zwitserland
+Szwajcaria
+Suíça
+Швейцария
+瑞士
+</code></pre>
+<p>Thus, the result is presented in list form.</p>
+<h4 id="different-ways-to-send-queries">Different ways to send queries</h4>
+<p>As we've seen in the last paragraph, SPARQL queries can be stored in a file and run from the command line with e.g. Python. However, there are other ways to send your query and the resulting output will differ slightly, depending on which way you chose. Here are a few examples if we query the dbpedia SPARQL endpoint about labels of the resource Switzerland as in the python example in the last paragraph.</p>
+<p>If the query part of the script</p>
+<pre><code>SELECT ?label
+    WHERE { &lt;http://dbpedia.org/resource/Switzerland&gt; rdfs:label ?label . }
+</code></pre>
+<p>is directly copied into the query text box of the Virtuoso SPARQL Query Editor at http://dbpedia.org/sparql and the results format is chosen as "JSON", the output looks as follows:</p>
+<pre><code>head:
+   link:    []
+   vars:
+    0:  &quot;label&quot;
+results:
+  distinct: false
+  ordered:  true
+  bindings:
+    0:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;en&quot;
+        value:  &quot;Switzerland&quot;
+    1:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;ar&quot;
+        value:     &quot;سويسرا&quot;
+    2:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;de&quot;
+        value:     &quot;Schweiz&quot;
+    3:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;es&quot;
+        value:     &quot;Suiza&quot;
+    4:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;fr&quot;
+        value:     &quot;Suisse&quot;
+    5:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;it&quot;
+        value:     &quot;Svizzera&quot;
+    6:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;ja&quot;
+        value:     &quot;スイス&quot;
+    7:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;nl&quot;
+        value:     &quot;Zwitserland&quot;
+    8:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;pl&quot;
+        value:     &quot;Szwajcaria&quot;
+    9:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;pt&quot;
+        value:     &quot;Suíça&quot;
+    10:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;ru&quot;
+        value:     &quot;Швейцария&quot;
+    11:
+      label:
+        type:      &quot;literal&quot;
+        xml:lang:   &quot;zh&quot;
+        value:     &quot;瑞士&quot;
+</code></pre>
+<p>Another possibility to retrieve the result of the same query is to send the whole query URL encoded via your browser. To URL encode your query, you can use a tool such as <a href="https://www.urlencoder.org/">URL Decode and Encode</a>:</p>
+<pre><code>http://dbpedia.org/sparql?query=SELECT%20%3Flabel%20WHERE%20%7B%20%0A%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FSwitzerland%3E%20rdfs%3Alabel%20%3Flabel%20.%0A%7D
+</code></pre>
+<p>The result will be a table with included language tabs in HTML format:</p>
+<pre><code>label
+
+&quot;Switzerland&quot;@en
+
+&quot;سويسرا&quot;@ar
+
+&quot;Schweiz&quot;@de
+
+&quot;Suiza&quot;@es
+
+&quot;Suisse&quot;@fr
+
+&quot;Svizzera&quot;@it
+
+&quot;スイス&quot;@ja
+
+&quot;Zwitserland&quot;@nl
+
+&quot;Szwajcaria&quot;@pl
+
+&quot;Suíça&quot;@pt
+
+&quot;Швейцария&quot;@ru
+
+&quot;瑞士&quot;@zh
+</code></pre>
+<p>Or you can send the whole query URL encoded as HTTP GET request using e.g. Postman:</p>
+<pre><code>HTTP GET sent to http://dbpedia.org/sparql?query=SELECT%20%3Flabel%20WHERE%20%7B%20%0A%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FSwitzerland%3E%20rdfs%3Alabel%20%3Flabel%20.%0A%7D
+</code></pre>
+<p>This retrieves the following result in JSON format:</p>
+<pre><code>&lt;sparql xmlns=&quot;http://www.w3.org/2005/sparql-results#&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.w3.org/2001/sw/DataAccess/rf1/result2.xsd&quot;&gt;
+ &lt;head&gt;
+  &lt;variable name=&quot;label&quot;/&gt;
+ &lt;/head&gt;
+ &lt;results distinct=&quot;false&quot; ordered=&quot;true&quot;&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;en&quot;&gt;Switzerland&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;ar&quot;&gt;سويسرا&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;de&quot;&gt;Schweiz&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;es&quot;&gt;Suiza&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;fr&quot;&gt;Suisse&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;it&quot;&gt;Svizzera&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;ja&quot;&gt;スイス&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;nl&quot;&gt;Zwitserland&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;pl&quot;&gt;Szwajcaria&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;pt&quot;&gt;Suíça&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;ru&quot;&gt;Швейцария&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+  &lt;result&gt;
+   &lt;binding name=&quot;label&quot;&gt;&lt;literal xml:lang=&quot;zh&quot;&gt;瑞士&lt;/literal&gt;&lt;/binding&gt;
+  &lt;/result&gt;
+ &lt;/results&gt;
+&lt;/sparql&gt;
+</code></pre>
+<p><br></p>
+<h2 id="gravsearch-queries">Gravsearch queries</h2>
+<p>Gravsearch is a query language which is able to perform queries with complex search criteria that work well in terms of perforance and security. Furthermore, it enables clients to work with a simpler RDF data model than the one Knora actually uses to store data in the triplestore, and it permits to provide better error-checking than SPARQL.</p>
+<p>A Gravsearch query isn't being processed directly by the triplestore. Instead, the query is interpreted by Knora, which enforces certain restrictions on the query, implements paging and permission checking. The API server then generates a SPARQL query based on the submitted Gravsearch query, queries the triplestore, filters the results according to the user’s permissions, and returns each page of query results as a Knora API response. Thus, Gravsearch is a hybrid between a RESTful API and a SPARQL endpoint.</p>
+<p>A Gravsearch query conforms to a subset of the syntax of a <a href="https://www.w3.org/TR/sparql11-query/#construct">SPARQL CONSTRUCT</a> query, with some additional restrictions and functionality. In particular, the variable representing the top-level (or ‘main’) resource that will appear in each search result must be identified, statements must be included to specify the types of the entities being queried, <code>OFFSET</code> is used to control paging, and <code>ORDER BY</code> is used to sort the results.</p>
+<p>The current version of Gravsearch accepts <code>CONSTRUCT</code> queries whose <code>WHERE</code>-clauses use the following patterns, with the specified restrictions:</p>
+<ul>
+<li><code>OPTIONAL</code>: cannot be nested in a <code>UNION</code>.</li>
+<li><code>UNION</code>: cannot be nested in a <code>UNION</code>.</li>
+<li><code>FILTER</code>: may contain a complex expression using the Boolean operators <code>AND</code> (&amp;&amp;) and <code>OR</code> (||), as well as comparison operators. The left argument of a comparison operator must be a query variable. A Knora ontology entity IRI used in a <code>FILTER</code> must be a property IRI.</li>
+<li><code>FILTER NOT EXISTS</code></li>
+<li><code>MINUS</code></li>
+<li><code>OFFSET</code>: the <code>OFFSET</code> is needed for paging. It does not actually refer to the number of triples to be returned, but to the requested page of results. The default value is 0, which refers to the first page of results. The number of results per page is defined in <code>app/v2</code> in <code>application.conf</code>.</li>
+<li><code>ORDER BY</code>: In SPARQL, the result of a <code>CONSTRUCT</code> query is an unordered set of triples. However, a Gravsearch query returns an ordered list of resources, which can be ordered by the values of specified properties. If the query is written in the complex schema, items below the level of Knora values may not be used in <code>ORDER BY</code>.</li>
+<li><code>BIND</code>: The value assigned must be a Knora resource IRI.</li>
+</ul>
+<p><br></p>
+<h3 id="gravsearch-query-examples">Gravsearch query examples</h3>
+<p>To send queries to our live-server it is easiest to use the program Postman. You have to chose the method <code>POST</code>. Open Postman and type</p>
+<pre><code>HTTP POST sent to https://api.dasch.swiss/v2/searchextended
+</code></pre>
+<p>Then click "Body" and chose "raw". You can then write your queries in the window before sending your request. Be aware, that only <code>CONSTRUCT</code> requests are supported by <code>knora-api</code>.</p>
+<p>Here is one query examples, more will follow.</p>
+<pre><code>PREFIX beol: &lt;http://api.dasch.swiss/ontology/0801/beol/simple/v2#&gt;
+    PREFIX knora-api: &lt;http://api.knora.org/ontology/knora-api/simple/v2#&gt;
+
+    CONSTRUCT {
+        ?letter knora-api:isMainResource true .
+
+        ?letter beol:creationDate ?date .
+
+        ?letter ?linkingProp1  ?person1 .
+
+        ?letter ?linkingProp2  ?person2 .
+
+    } WHERE {
+        ?letter a knora-api:Resource .
+        ?letter a beol:letter .
+
+
+    ?letter beol:letterHasTranslation ?translation .
+
+    beol:letterHasTranslation knora-api:objectType knora-api:Resource .
+    ?translation a knora-api:Resource .
+
+
+
+        ?letter beol:creationDate ?date .
+
+        beol:creationDate knora-api:objectType knora-api:Date .
+        ?date a knora-api:Date .
+
+        ?letter ?linkingProp1  ?person1 .
+
+        ?linkingProp1 knora-api:objectType knora-api:Resource .
+        FILTER(?linkingProp1 = beol:hasAuthor || ?linkingProp1 = beol:hasRecipient )
+
+        ?person1 a beol:person .
+        ?person1 a knora-api:Resource .
+
+        ?person1 beol:hasIAFIdentifier ?gnd1 .
+        FILTER(?gnd1 = &quot;(DE-588)116610832&quot;)
+
+        ?gnd1 a xsd:string .
+
+        ?letter ?linkingProp2 ?person2 .
+        ?linkingProp2 knora-api:objectType knora-api:Resource .
+
+        FILTER(?linkingProp2 = beol:hasAuthor || ?linkingProp2 = beol:hasRecipient )
+
+        ?person2 a beol:person .
+        ?person2 a knora-api:Resource .
+
+        ?person2 beol:hasIAFIdentifier ?gnd2 .
+        FILTER(?gnd2 = &quot;(DE-588)118696149&quot;)
+
+        ?gnd2 a xsd:string .
+
+        beol:hasIAFIdentifier knora-api:objectType xsd:string .
+
+    } ORDER BY ?date
+
+            OFFSET 0
+</code></pre>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../" title="Introduction" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Introduction
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../documentation/" title="Introduction" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Introduction
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../../..",
+          features: ['navigation.tabs'],
+          search: Object.assign({
+            worker: "../../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

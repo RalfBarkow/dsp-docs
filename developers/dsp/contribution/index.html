@@ -1,0 +1,1549 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/dasch-favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.0.1">
+    
+    
+      
+        <title>How to contribute - DaSCH Service Platform Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.38780c08.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.3f72e892.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#7e56c2">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../assets/style/theme.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-contribute-to-the-development-of-the-dsp" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../../.." title="DaSCH Service Platform Documentation" class="md-header-nav__button md-logo" aria-label="DaSCH Service Platform Documentation">
+      
+  <img src="../../../assets/images/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            DaSCH Service Platform Documentation
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              How to contribute
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../user-guide/" class="md-tabs__link">
+          User Guide
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../" class="md-tabs__link md-tabs__link--active">
+          Developers
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../community/faq/" class="md-tabs__link">
+          Community
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="DaSCH Service Platform Documentation" class="md-nav__button md-logo" aria-label="DaSCH Service Platform Documentation">
+      
+  <img src="../../../assets/images/dasch-icon-white.svg" alt="logo">
+
+    </a>
+    DaSCH Service Platform Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      User Guide
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="User Guide" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
+        User Guide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/project/" title="Project Management" class="md-nav__link">
+      Project Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/data/" title="Data Management" class="md-nav__link">
+      Data Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/user/" title="User Management" class="md-nav__link">
+      User Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../user-guide/system/" title="System Management" class="md-nav__link">
+      System Management
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Developers
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Developers" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../" title="Overview" class="md-nav__link">
+      Overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/getting-started/" title="Knora Getting Started" class="md-nav__link">
+      Knora Getting Started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
+      API Reference
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API Reference" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        API Reference
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/api-reference/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/api-reference/queries/" title="Queries" class="md-nav__link">
+      Queries
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4">
+    
+    <label class="md-nav__link" for="nav-2-4">
+      Documentation
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Documentation" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-1" type="checkbox" id="nav-2-4-1">
+    
+    <label class="md-nav__link" for="nav-2-4-1">
+      Knora
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Knora" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-1">
+        <span class="md-nav__icon md-icon"></span>
+        Knora
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/documentation/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/documentation/rdf/" title="RDF" class="md-nav__link">
+      RDF
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/documentation/knora-base/" title="Knora-base ontology" class="md-nav__link">
+      Knora-base ontology
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/documentation/knora-admin/" title="Knora-admin ontology" class="md-nav__link">
+      Knora-admin ontology
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora-api-js-lib/documentation/" title="Knora API JS lib" class="md-nav__link">
+      Knora API JS lib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3" type="checkbox" id="nav-2-4-3">
+    
+    <label class="md-nav__link" for="nav-2-4-3">
+      DSP-UI modules
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="DSP-UI modules" data-md-level="3">
+      <label class="md-nav__title" for="nav-2-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        DSP-UI modules
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-2" type="checkbox" id="nav-2-4-3-2">
+    
+    <label class="md-nav__link" for="nav-2-4-3-2">
+      Action module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Action module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-2">
+        <span class="md-nav__icon md-icon"></span>
+        Action module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/index-action/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/admin-image/" title="AdminImage" class="md-nav__link">
+      AdminImage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/existing-name/" title="ExistingName" class="md-nav__link">
+      ExistingName
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/key/" title="Key" class="md-nav__link">
+      Key
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/message/" title="Message" class="md-nav__link">
+      Message
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/progress-indicator/" title="Progress indicator" class="md-nav__link">
+      Progress indicator
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/sort-button/" title="SortButton" class="md-nav__link">
+      SortButton
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/stringify-string-literal/" title="StringifyStringLiteral" class="md-nav__link">
+      StringifyStringLiteral
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/action/truncate/" title="Truncate" class="md-nav__link">
+      Truncate
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-3" type="checkbox" id="nav-2-4-3-3">
+    
+    <label class="md-nav__link" for="nav-2-4-3-3">
+      Core module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Core module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-3">
+        <span class="md-nav__icon md-icon"></span>
+        Core module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/core/index-core/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-4" type="checkbox" id="nav-2-4-3-4">
+    
+    <label class="md-nav__link" for="nav-2-4-3-4">
+      Search module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Search module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-4">
+        <span class="md-nav__icon md-icon"></span>
+        Search module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/search/index-search/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/search/search-panel/" title="Search-panel" class="md-nav__link">
+      Search-panel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/search/fulltext-search/" title="Fulltext search" class="md-nav__link">
+      Fulltext search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/search/extended-search/" title="Extended search" class="md-nav__link">
+      Extended search
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/search/expert-search/" title="Expert search" class="md-nav__link">
+      Expert search
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4-3-5" type="checkbox" id="nav-2-4-3-5">
+    
+    <label class="md-nav__link" for="nav-2-4-3-5">
+      Viewer module
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Viewer module" data-md-level="4">
+      <label class="md-nav__title" for="nav-2-4-3-5">
+        <span class="md-nav__icon md-icon"></span>
+        Viewer module
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/viewer/index-viewer/" title="Readme" class="md-nav__link">
+      Readme
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/documentation/viewer/search-results/" title="Search-results" class="md-nav__link">
+      Search-results
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora-web-app/documentation/" title="Knora web app" class="md-nav__link">
+      Knora web app
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sipi/documentation/" title="Sipi" class="md-nav__link">
+      Sipi
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" checked>
+    
+    <label class="md-nav__link" for="nav-2-5">
+      Contribution
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Contribution" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
+        Contribution
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        How to contribute
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" title="How to contribute" class="md-nav__link md-nav__link--active">
+      How to contribute
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-branch-guidelines" class="md-nav__link">
+    Create Branch Guidelines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-commit-guidelines" class="md-nav__link">
+    Git Commit Guidelines
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Commit Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commit-message-format" class="md-nav__link">
+    Commit Message Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Commit Message Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scope-optional" class="md-nav__link">
+    Scope (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subject" class="md-nav__link">
+    Subject
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-request-guidelines" class="md-nav__link">
+    Pull request guidelines
+  </a>
+  
+    <nav class="md-nav" aria-label="Pull request guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-title-and-add-description" class="md-nav__link">
+    Set title and add description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-label" class="md-nav__link">
+    Add a label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-a-draft" class="md-nav__link">
+    Make a draft
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-protection-rules" class="md-nav__link">
+    Branch protection rules
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-github-actions-workflows-ci" class="md-nav__link">
+    General GitHub actions workflows (CI)
+  </a>
+  
+    <nav class="md-nav" aria-label="General GitHub actions workflows (CI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-tests" class="md-nav__link">
+    Run tests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-notes" class="md-nav__link">
+    Release notes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release" class="md-nav__link">
+    Release
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora/contribution/" title="Knora" class="md-nav__link">
+      Knora
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora-api-js-lib/contribution/" title="Knora API JS lib" class="md-nav__link">
+      Knora API JS lib
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../dsp-ui/contribution/" title="DSP-UI modules" class="md-nav__link">
+      DSP-UI modules
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../knora-web-app/contribution/" title="Knora web app" class="md-nav__link">
+      Knora web app
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sipi/contribution/" title="Sipi" class="md-nav__link">
+      Sipi
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Community
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Community" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Community
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../community/faq/" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../community/product-updates/" title="Product Updates" class="md-nav__link">
+      Product Updates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../community/about-us/" title="About us" class="md-nav__link">
+      About us
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-branch-guidelines" class="md-nav__link">
+    Create Branch Guidelines
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-commit-guidelines" class="md-nav__link">
+    Git Commit Guidelines
+  </a>
+  
+    <nav class="md-nav" aria-label="Git Commit Guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#commit-message-format" class="md-nav__link">
+    Commit Message Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Commit Message Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scope-optional" class="md-nav__link">
+    Scope (optional)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subject" class="md-nav__link">
+    Subject
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-request-guidelines" class="md-nav__link">
+    Pull request guidelines
+  </a>
+  
+    <nav class="md-nav" aria-label="Pull request guidelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set-title-and-add-description" class="md-nav__link">
+    Set title and add description
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-label" class="md-nav__link">
+    Add a label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#make-a-draft" class="md-nav__link">
+    Make a draft
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-protection-rules" class="md-nav__link">
+    Branch protection rules
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-github-actions-workflows-ci" class="md-nav__link">
+    General GitHub actions workflows (CI)
+  </a>
+  
+    <nav class="md-nav" aria-label="General GitHub actions workflows (CI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-tests" class="md-nav__link">
+    Run tests
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release-notes" class="md-nav__link">
+    Release notes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#release" class="md-nav__link">
+    Release
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="how-to-contribute-to-the-development-of-the-dsp">How to contribute to the development of the DSP</h1>
+<p>The DSP software is developed under git version control using <a href="https://github.com/dasch-swiss">GitHub</a>. It includes the following main repositories:</p>
+<p><a href="https://github.com/dasch-swiss/knora-api"><img alt="Knora-API" src="https://img.shields.io/github/v/release/dasch-swiss/knora-api?include_prereleases&amp;label=Knora-API" /></a>
+<a href="https://github.com/dasch-swiss/dsp-js-lib"><img alt="DSP-JS-LIB" src="https://img.shields.io/github/v/release/dasch-swiss/dsp-js-lib?include_prereleases&amp;label=DSP-JS-LIB" /></a>
+<a href="https://github.com/dasch-swiss/dsp-ui-lib"><img alt="DSP-UI-LIB" src="https://img.shields.io/github/v/release/dasch-swiss/dsp-ui-lib?include_prereleases&amp;label=DSP-UI-LIB" /></a>
+<a href="https://github.com/dasch-swiss/dsp-app"><img alt="DSP-APP" src="https://img.shields.io/github/v/release/dasch-swiss/dsp-app?include_prereleases&amp;label=DSP-APP" /></a>
+<a href="https://github.com/dasch-swiss/dsp-docs"><img alt="DSP-Docs" src="https://img.shields.io/github/v/release/dasch-swiss/dsp-docs?include_prereleases&amp;label=DSP-Docs" /></a></p>
+<p>In all these repositories, we follow the <a href="https://guides.github.com/introduction/flow/">GitHub flow</a> recommondations:</p>
+<ol>
+<li><a href="#create-branch-guidelines">Create a branch from main</a></li>
+<li><a href="#git-commit-guidelines">Add commits</a></li>
+<li><a href="#pull-request-guidelines">Open a pull request</a></li>
+<li>Discuss and review your code</li>
+<li>Merge into <code>main</code> branch</li>
+</ol>
+<h2 id="create-branch-guidelines">Create Branch Guidelines</h2>
+<p>You will work on an own branch to resolve one issue or user story defined on <a href="https://dasch.myjetbrains.com/youtrack/">Youtrack</a>. Each of those issues has a DSP-number which has to be used in the branch name:</p>
+<pre><code class="language-text">wip/&lt;DSP-nr&gt;-&lt;subject&gt;
+</code></pre>
+<p>The prefix <code>wip</code> stands for "work in progress" followed by a "/" (slash). The second part starts with the DSP-number followed by a short subject which contains succinct description of the issue/user story. DSP-number and subject have to be written in kebab-case with "-" (hyphens).</p>
+<h2 id="git-commit-guidelines">Git Commit Guidelines</h2>
+<p>We follow strict rules how a commit message has to look like. This leads to more readable messages that are easy to follow when looking through the project history.</p>
+<h3 id="commit-message-format">Commit Message Format</h3>
+<pre><code class="language-text">&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;
+</code></pre>
+<h4 id="type">Type</h4>
+<p>Must be one of the following:</p>
+<ul>
+<li><strong>feat</strong> New feature</li>
+<li><strong>fix</strong> A bug fix</li>
+<li><strong>docs</strong> Changes to the documentation</li>
+<li><strong>style</strong> Update style; no production code change</li>
+<li><strong>refactor</strong> Refactoring production code</li>
+<li><strong>test</strong> All about tests: adding, refactoring tests; no production code change</li>
+<li><strong>chore</strong> Maintenance tasks; no production code change</li>
+</ul>
+<h4 id="scope-optional">Scope (optional)</h4>
+<p>The scope could be anything specifying place of the commit change.</p>
+<h4 id="subject">Subject</h4>
+<p>The subject contains succinct description of the change:</p>
+<ul>
+<li>use the imperative, present tense: "change" not "changed" nor "changes"</li>
+<li>don't capitalize first letter</li>
+<li>no dot (.) at the end</li>
+</ul>
+<h2 id="pull-request-guidelines">Pull request guidelines</h2>
+<h3 id="set-title-and-add-description">Set title and add description</h3>
+<p>A pull request resolves one issue or user story defined on <a href="https://dasch.myjetbrains.com/youtrack/">Youtrack</a>. Please reuse the DSP-number and the same title as on Youtrack:</p>
+<pre><code class="language-text">&lt;DSP-nr&gt; &lt;title&gt;
+</code></pre>
+<p>When using the DSP-number in the PR, the PR will be linked on Youtrack. To link the user story to a GitHub's PR, we strongly recommend to add it also to the description in the following form:</p>
+<pre><code class="language-text">Resolves &lt;DSP-nr&gt;
+</code></pre>
+<p>Replace the <code>&lt;DSP-nr&gt;</code> with the real number e.g. <code>DSP-42</code>. With Github's <a href="https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/configuring-autolinks-to-reference-external-resources">Autolink Setting</a> it will automatically generate a link to Youtrack's issue.</p>
+<h3 id="add-a-label">Add a label</h3>
+<p>Add at least one of the corresponding labels to your PR:</p>
+<ul>
+<li><strong>breaking</strong> Breaking Changes</li>
+<li><strong>enhancement</strong> New feature</li>
+<li><strong>bug</strong> A bug fix</li>
+<li><strong>styling</strong> Update style; no production code change</li>
+<li><strong>documentation</strong> Changes to the documentation</li>
+<li><strong>testing</strong> All about tests: adding, refactoring tests; no production code change</li>
+<li><strong>refactor</strong> Refactoring production code</li>
+<li><strong>chore</strong> Maintenance tasks; no production code change</li>
+<li><strong>dependencies</strong> Update a dependency package version</li>
+</ul>
+<h3 id="make-a-draft">Make a draft</h3>
+<p>Please convert the pull request to draft as long it is not ready for reviewing. As soon as the PR is ready for review, click on the corresponding button "Ready for review".</p>
+<h3 id="branch-protection-rules">Branch protection rules</h3>
+<p>The main branch of each repo (it's usually the <code>main</code> branch) is protected by the following rules:</p>
+<ul>
+<li>Require pull request reviews before merging<ul>
+<li>At least from one reviewer</li>
+</ul>
+</li>
+<li>Require status checks to pass before merging<ul>
+<li>Require branches to be up-to-date before merging</li>
+<li>Status checks e.g. tests defined in each repository's CI</li>
+</ul>
+</li>
+</ul>
+<p>When the PR is merged, the branch will be deleted automatically.</p>
+<h2 id="general-github-actions-workflows-ci">General GitHub actions workflows (CI)</h2>
+<p>We use <a href="https://github.com/features/actions">GitHub actions</a> to automate some processes.</p>
+<h3 id="run-tests">Run tests</h3>
+<p>With each push to GitHub, the tests of the repository are executed. Successfull tests are needed to merge code into repository's main branch (s. <a href="#branch-protection-rules">Branch protection rules</a>).</p>
+<p><a href="https://github.com/dasch-swiss/knora-api/actions"><img alt="Knora-API CI" src="https://img.shields.io/github/workflow/status/dasch-swiss/knora-api/CI?label=Knora-API%20CI" /></a>
+<a href="https://github.com/dasch-swiss/dsp-js-lib/actions"><img alt="DSP-JS-LIB CI" src="https://img.shields.io/github/workflow/status/dasch-swiss/dsp-js-lib/CI?label=DSP-JS-LIB%20CI" /></a>
+<a href="https://github.com/dasch-swiss/dsp-ui-lib/actions"><img alt="DSP-UI-LIB CI" src="https://img.shields.io/github/workflow/status/dasch-swiss/dsp-ui-lib/CI?label=DSP-UI-LIB%20CI" /></a>
+<a href="https://github.com/dasch-swiss/dsp-app/actions"><img alt="DSP-APP CI" src="https://img.shields.io/github/workflow/status/dasch-swiss/dsp-app/CI?label=DSP-APP%20CI" /></a>
+<a href="https://github.com/dasch-swiss/dsp-docs/actions"><img alt="DSP-Docs CI" src="https://img.shields.io/github/workflow/status/dasch-swiss/dsp-docs/Publish?label=DSP-Docs%20CI" /></a></p>
+<h3 id="release-notes">Release notes</h3>
+<p>After each push into the main branch &mdash; after each merge from a pull request &mdash; the release notes for the next release are updated. This release called "Next release" is a draft and can be used to publish the <a href="#release">real release</a> later.</p>
+<p>The GitHub action we use for this step is <a href="https://github.com/marketplace/actions/release-drafter">release-drafter</a>.</p>
+<h3 id="release">Release</h3>
+<p>To make a real release, we have to publish the <a href="#release-notes">release draft</a>, mentioned above, manually. Be sure it's up to date; you have to wait until the release-drafter were run in Github actions and wait until the tests pass on repository's main branch. Update the tag and the release title with the release version number, including the prefix <code>v</code>: e.g. v1.0.0 or v1.0.0-rc.0</p>
+<p>Do not forget to check the box "This is a pre-release" in case of a release candidate (-rc.).</p>
+<p>With each published (pre-)release, the action workflow builds the npm package or the docker image and publishes on the corresponding platform.</p>
+<p><a href="https://hub.docker.com/r/daschswiss/knora-api"><img alt="Knora-API Docker Image" src="https://img.shields.io/docker/v/daschswiss/knora-api?label=Knora-API%20Docker%20Image" /></a></p>
+<p><a href="https://www.npmjs.com/package/@dasch-swiss/dsp-js"><img alt="DSP-JS NPM Package" src="https://img.shields.io/npm/v/@dasch-swiss/dsp-js?label=DSP-JS%20NPM%20package" /></a></p>
+<p><a href="https://www.npmjs.com/package/@dasch-swiss/dsp-ui"><img alt="DSP-UI NPM Package" src="https://img.shields.io/npm/v/@dasch-swiss/dsp-ui?label=DSP-UI%20NPM%20package" /></a></p>
+<p><a href="https://hub.docker.com/r/daschswiss/dsp-app"><img alt="DSP-APP Docker Image" src="https://img.shields.io/docker/v/daschswiss/dsp-app?label=DSP-APP%20Docker%20Image" /></a></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../sipi/documentation/" title="Sipi" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Sipi
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../knora/contribution/" title="Knora" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Knora
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.77e55a48.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.aa3f9871.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: ['navigation.tabs'],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
