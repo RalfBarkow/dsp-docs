@@ -7,7 +7,7 @@ Once your [data model](/user-guide/project/#data-model) is ready, you're able to
 
 When a project starts from scratch, you will enter and generate new data directly in the DSP-APP itself. Generating new data can be done one by one with a form or with a table-based (Excel like) tool.
 
-- Upload the files, e.g., the actual audio file of an interview or images of the photographs discussed in the interview
+- Upload the files
 - Augment the metadata
 - In case of interview transcriptions from audio or video files, DSP-APP will offer a simple transcription tool
 
