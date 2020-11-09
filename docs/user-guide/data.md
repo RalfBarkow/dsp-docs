@@ -9,9 +9,8 @@ When a project starts from scratch, you will enter and generate new data directl
 
 - Upload the files
 - Augment the metadata
-- In case of interview transcriptions from audio or video files, DSP-APP will offer a simple transcription tool
 
-![Create new source e.g. upload audio file of an interview.](../assets/images/knora-app/mock-source-new-edit.png)*Create new source; e.g. upload audio file of an interview.*
+![Create new source](../assets/images/knora-app/mock-source-new-edit.png)*Create new source*
 
 ---
 
